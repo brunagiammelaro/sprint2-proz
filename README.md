@@ -22,6 +22,9 @@ O presente projeto tem como objetivo a elaboração de uma site que auxilie cãe
 <a href="https://github.com/lucasegm">
 <img src="https://avatars.githubusercontent.com/u/123710346?v=4" width="50px" />
 </a>
+<a href="https://github.com/rcsantos301223">
+<img src="https://avatars.githubusercontent.com/u/125628137?v=4" width="50px" />
+</a>
 <a href="https://github.com/williamwa7">
 <img src="https://avatars.githubusercontent.com/u/122879475?v=4" width="50px" />
 </a>
