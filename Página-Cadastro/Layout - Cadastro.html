@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote</title>
+    <link rel="icon" href="../assets/logo.png">
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/logo.png" width="112px" height="68px" alt="logo do site" title="Logo">
+        <h1>PawsOnCloud</h2>
+    </header>
+    <main>
+        <fieldset>
+        <form action="" method="get" autocomplete="on"></form>
+        <h2>Cadastro</h1>
+        <section>
+             <fieldset>
+                    <h3>INFORMAÇÕES DE CADASTRO</h3>
+                        <p>Desejo:</p>
+                        <input type="radio" name="adotar" id="iadotar"><label for="iadotar">Adotar</label>
+                        <input type="radio" name="doar" id="idoar"><label for="idoar">Doar</label> 
+                    
+                    <p>
+                        <label for="inome">*Nome Completo</label>
+                        <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+                    </p>
+                    <p>
+                        <label for="icpf">*CPF</label>
+                        <input type="cpf" name="cpf" id="icpf" autocomplete="cpf" required>
+                    </p>
+                    <p>
+                        <label for="idia">*Data de nascimento</label>
+                        <input type="date" name="dia" id="idia" value="2023-01-01">
+                    </p>
+                    <p>
+                        <label for="iend">Endereço</label>
+                        <input type="end" name="end" id="iend" autocomplete="end" required>
+                    </p>
+                    <p>
+                        <label for="icomplemento">Complemento</label>
+                        <input type="complemento" name="complemento" id="icomplemento" autocomplete="complemento" required>
+                    </p>
+                    <p>
+                        <label for="iest">*UF</label>
+                        <select name="estado" id="iest">
+                            <option value="AL">AL</option>
+                            <option value="AP">AM</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="icidade">*Cidade</label>
+                        <input type="cidade" name="cidade" id="icidade" autocomplete="cidade" required>
+                    </p>
+                    <p>
+                        <label for="iemail">*E-mail</label>
+                        <input type="email" name="email" id="iemail" autocomplete="email" required>
+                    </p>
+                    <p>
+                        <label for="itel">*Telefone</label>
+                        <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
+                    </p>
+                    <p>
+                        <label for="isenha">*Senha</label>
+                        <input type="senha" name="senha" id="isenha" autocomplete="senha" required>
+                    </p>
+                    <p>
+                        <label for="isenha">*Confirmar Senha</label>
+                        <input type="senha" name="senha" id="isenha" autocomplete="senha" required>
+                    </p>
+                    <p>
+                        <input type="submit" value="Salvar Informações">
+                    </p>
+                </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <h3>DOAR - INFORMAÇÕES DO PET</h3>
+                <p>
+                    <label for="inomepet">*Nome do Pet</label>
+                    <input type="nome" name="nome" id="inomepet" autocomplete="nome" required>
+                </p>
+                <p>Porte:</p>
+                <input type="radio" name="tamanho" id="ipequeno"><label for="ipequeno">Pequeno</label>
+                <input type="radio" name="tamanho" id="imedio"><label for="imedio">Médio</label>
+                <input type="radio" name="tamanho" id="igrande"><label for="igrande">Grande</label>
+                <p>
+                    <label for="iidade">*Idade</label>
+                    <input type="idadepet" name="idadepet" id="iidade" autocomplete="idadepet" required>
+                </p>
+                <p>Espécie:</p>
+                <input type="radio" name="especie" id="icanino"><label for="icanino">Canino</label>
+                <input type="radio" name="especie" id="ifelino"><label for="ifelino">Felino</label>
+                <p>
+                    <label for="ipelo">Pelagem</label>
+                    <input type="pelo" name="pelo" id="ipelo" autocomplete="ipelo" required>
+                </p>
+                <p>
+                    <label for="ipeso">*Peso</label>
+                    <input type="peso" name="peso" id="ipeso" autocomplete="peso" required>
+                </p>
+                <p>
+                    <label for="ifoto">*Carregue uma foto do Pet</label>
+                    <input type="file" name="foto" id="ifoto">
+                </p>
+                <p>
+                    <input type="submit" value="Salvar Informações">
+                </p>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <h3>ADOÇÃO - INFORMAÇÕES DO TUTOR</h3>
+                <p>Você possui outros animais em casa?</p>
+                <input type="radio" name="nao" id="inao"><label for="inao">Não</label>
+                <input type="radio" name="sim" id="isim"><label for="isim">Sim</label>
+                <p>
+                    <label for="ioutrosanimais">Quais são os animais?</label>
+                    <input type="outrosanimais" name="outrosanimais" id="ioutrosanimais" autocomplete="ioutrosanimais" required>
+                </p>
+                <p>Animais são gastos com alimentação, higiene e veterinário. Você está ciente?</p>
+                    <input type="radio" name="nao" id="inao"><label for="inao">Não</label>
+                    <input type="radio" name="sim" id="isim"><label for="isim">Sim</label>
+
+                <p>Sua casa oferece segurança para o animal?</p>
+                    <input type="radio" name="nao" id="inao"><label for="inao">Não</label>
+                    <input type="radio" name="sim" id="isim"><label for="isim">Sim</label>
+                <p>Quais características você procura em um pet?</p>
+                <p>Espécie:</p>
+                    <input type="radio" name="especie" id="icanino"><label for="icanino">Canino</label>
+                    <input type="radio" name="especie" id="ifelino"><label for="ifelino">Felino</label>
+                <p>Porte:</p>
+                    <input type="radio" name="tamanho" id="ipequeno"><label for="ipequeno">Pequeno</label>
+                    <input type="radio" name="tamanho" id="imedio"><label for="imedio">Médio</label>
+                    <input type="radio" name="tamanho" id="igrande"><label for="igrande">Grande</label>
+                <p>
+                    <input type="submit" value="Salvar Informações">
+                </p>
+                
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Declaro que li e concordo com os Termos de Uso e Política de Privacidade, incluindo o nosso uso de Cookies.</label><br>
+            </fieldset>
+        </section>
+        <div>
+            <input type="submit" value="Criar Cadastro">
+        </div>
+        </form>
+        </fieldset>
+    </main>
+    <footer>
+        
+        <img src="../assets/dog icon.png" width="100px" height="70px">
+        <img src="../assets/cat icon.png" width="64px" height="70px">
+        <img src="../assets/pata dog.svg" width="83px" height="75px">
+        <img src="../assets/pata dog.svg" width="83px" height="75px">
+        <img src="../assets/pata cat.svg" width="83px" height="75px">
+        <img src="../assets/pata cat.svg" width="83px" height="75px">
+        <p>© 2023 Todos os direitos reservados à PawsOnCloud • Desenvolvido pelo Grupo I</p>
+    </footer>
+</body>
+</html>
