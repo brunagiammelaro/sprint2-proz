@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", sans-serif;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+	background-color: #e4edff;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.containerLogoTitulo {
+	display: flex;
+	align-items: center;
+	margin-left: 85px;
+}
+
+header h2 {
+	font-family: "Leckerli One", cursive;
+	margin-left: 15px;
+	font-size: 32px;
+	color: #0292c9;
+}
+
+.logoSite {
+	width: 112px;
+}
+
+header nav {
+	margin-right: 85px;
+}
+
+header nav a {
+	margin-left: 50px;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+header nav a:hover,
+header nav a:active {
+	color: #0292c9;
+	font-weight: bold;
+}
+
+.botaoNavbarCadastro {
+	background-color: #0292c9;
+	color: #ffffff;
+	padding: 12px;
+	border-radius: 5px;
+}
+
+.botaoNavbarCadastro:hover {
+	color: #ffffff;
+	background-color: #34aede;
+}
+
+/* --------------------------------------------------------------------- */
+
+main {
+	margin-top: 80px;
+}
+
+/* --------------------------------------------------------------------- */
+
+footer {
+}
+
+.containerPatinhas {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 200px 0 200px;
+	position: relative;
+	top: 10px;
+}
+
+.patinhaDogEsquerda {
+	position: relative;
+	top: -30px;
+	margin-right: 20px;
+}
+
+.patinhaCatDireita {
+	position: relative;
+	top: -30px;
+	margin-left: 20px;
+}
+
+.containerCatDogLinks {
+	background-color: #0292c9;
+	color: #e4edff;
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+}
+
+.containerFooterInfos {
+	padding: 30px 0 20px 0;
+}
+
+.containerLinks {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.containerLinks div {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	margin: 0 50px 0 50px;
+}
+
+.containerLinks a {
+	text-decoration: none;
+	color: #e4edff;
+	margin-top: 20px;
+}
+
+.containerLinks h3 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.dogImageFooter {
+	width: 243px;
+	height: 170px;
+}
+
+.catImageFooter {
+	width: 243px;
+	height: 170px;
+}
+
+footer p {
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #aba9a9;
+}
