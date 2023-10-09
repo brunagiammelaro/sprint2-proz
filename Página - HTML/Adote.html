@@ -1,38 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adote</title>
-    <link rel="icon" href="Assets/Images/logo.png">
-    <link rel="stylesheet" href="Assets/style.css">
-</head>
-<body>
-    <header>
-        <img src="Assets/Images/logo.png" width="112px" height="68px" alt="logo do site" title="Logo">
-        <h2>Paws on Cloud</h2>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Página Principal</a></li>
-                <li><a href="Adote.html">Adote</a></li>
-                <li><a href="Ong.html">Encontre uma ONG</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><button><a href="Cadastro.html">Cadastre-se</a></button></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ONGs</title>
+		<link rel="icon" href="Assets/Images/favicon.png" />
+		<link rel="stylesheet" href="styles/global.css" />
+		<link rel="stylesheet" href="styles/adote.css" />
+	</head>
+	<body>
+		<header>
+			<div class="containerLogoTitulo">
+				<img
+					class="logoSite"
+					src="../Página - HTML/Assets/Images/logo.png"
+					width="112px"
+					height="68px"
+					alt="logo do site"
+					title="Logo" />
+				<h2>PawsOnCloud</h2>
+			</div>
+			<nav>
+				<a class="botaoNavbarHome" href="Home.html">Página Principal</a>
+				<a class="botaoNavbarAdote" href="Adote.html">Adote</a>
+				<a class="botaoNavbarOng" href="Ong.html">Encontre uma ONG</a>
+				<a class="botaoNavbarBlog" href="Blog.html">Blog</a>
+				<a class="botaoNavbarCadastro" href="Cadastro.html"
+					>Cadastre-se</a
+				>
+			</nav>
+		</header>
 
-    </div>
-    <footer>
-        
-        <img src="Assets/Images/dog icon.png" width="243px" height="170px">
-        <img src="Assets/Images/cat icon.png" width="121px" height="138px">
-        <img src="Assets/Images/pata dog.svg" width="83px" height="75px">
-        <img src="Assets/Images/pata dog.svg" width="83px" height="75px">
-        <img src="Assets/Images/pata cat.svg" width="74px" height="75px">
-        <img src="Assets/Images/pata cat.svg" width="74px" height="75px">
-        <p>© 2023 Todos os direitos reservados à () • Desenvolvido pelo Grupo I</p>
-    </footer>
-</body>
+		<main>
+            
+		</main>
+
+		<footer>
+			<div class="containerPatinhas">
+				<div class="containerPatinhasDog">
+					<img
+						class="patinhaDogEsquerda"
+						src="../Página - HTML/Assets/Images/pata dog.svg"
+						width="83px"
+						height="75px" />
+					<img
+						class="patinhaDogDireita"
+						src="../Página - HTML/Assets/Images/pata dog.svg"
+						width="83px"
+						height="75px" />
+				</div>
+				<div class="containerPatinhasCat">
+					<img
+						class="patinhaCatEsquerda"
+						src="../Página - HTML/Assets/Images/pata cat.svg"
+						width="74px"
+						height="75px" />
+					<img
+						class="patinhaCatDireita"
+						src="../Página - HTML/Assets/Images/pata cat.svg"
+						width="74px"
+						height="75px" />
+				</div>
+			</div>
+			<div class="containerCatDogLinks">
+				<img
+					class="dogImageFooter"
+					src="../Página - HTML/Assets/Images/dog icon.png"
+					width="243px"
+					height="170px" />
+
+				<div class="containerFooterInfos">
+					<div class="containerLinks">
+						<div class="colunaLinksQuemSomos">
+							<h3>Quem Somos</h3>
+							<a href="#">Sobre Nós</a>
+							<a href="#">Termo de adoção para Download</a>
+							<a href="#">Dúvidas Frequentes</a>
+						</div>
+						<div class="colunaLinksDivulgueUmPet">
+							<h3>Divulgue um Pet</h3>
+							<a href="#">Cadastrar Animal</a>
+						</div>
+						<div class="colunaLinksAdote">
+							<h3>Adote</h3>
+							<a href="#">Adote com responsabilidade</a>
+						</div>
+					</div>
+					<p
+						>© 2023 Todos os direitos reservados à () • Desenvolvido
+						pelo Grupo I</p
+					>
+				</div>
+
+				<img
+					class="catImageFooter"
+					src="../Página - HTML/Assets/Images/cat icon.png"
+					width="121px"
+					height="138px" />
+			</div>
+		</footer>
+	</body>
 </html>
