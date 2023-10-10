@@ -3,15 +3,13 @@
 }
 
 .bannerOngsSection {
-	background-color: #0292C9;
+	background-color: #0292c9;
 	color: #ffffff;
-	padding: 0 170px;
-	height: 300px;
+	padding: 60px 170px;
 }
 
 .bannerOngsSection h1 {
 	font-size: 30px;
-	padding-top: 60px;
 }
 
 .bannerOngsSection p {
@@ -19,7 +17,6 @@
 	padding-top: 20px;
 	line-height: 1.5;
 }
-
 
 /* --------------------------------------------------------- */
 
@@ -37,7 +34,7 @@
 	flex-direction: column;
 	align-items: center;
 	width: 400px;
-	background-color: #E4EDFF;
+	background-color: #e4edff;
 	margin: 0 15px;
 	border-radius: 15px;
 	margin-bottom: 30px;
@@ -60,7 +57,7 @@
 
 .nomeOng {
 	font-size: 24px;
-	color: #0292C9;
+	color: #0292c9;
 	margin-bottom: 30px;
 }
 
@@ -100,4 +97,13 @@
 
 .containerRedesSociaisBotoes a:hover {
 	filter: grayscale(0);
+}
+
+@media (max-width: 800px) {
+	.bannerOngsSection {
+		padding: 60px 20px;
+	}
+	.containerRedesSociaisBotoes a {
+		filter: grayscale(0);
+	}
 }
