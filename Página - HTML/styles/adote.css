@@ -2,6 +2,16 @@
 	color: #0292c9;
 }
 
+#banneradote {
+    position: absolute;
+    top: 100px; /* Ajuste essa distância conforme a altura do seu cabeçalho */
+    width: 100%; /* Ocupar toda a largura */
+    background-color: #0292c9;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
 #perfis h3{
 	color: #FBB540;
 	font-size: 20px;
@@ -47,7 +57,10 @@ main {
 /* Estilos para o filtro na esquerda */
 #filtro {
     width: 15%; /* Ajuste a largura conforme necessário */
-    padding: 10px;
+    padding: 20px;
+	margin-top: 80px;
+	border: 1px dashed #0292C9;
+	border-radius: 15px;
 }
 
 /* Estilos para os perfis no meio da página */
@@ -55,12 +68,12 @@ main {
     width: 75%; /* Ajuste a largura conforme necessário */
     display: flex;
     flex-wrap: wrap;
-    gap: 100px; /* Espaço entre os perfis */
+    gap: 5px 80px; /* Espaço entre os perfis */
 }
 
 /* Estilos para cada perfil */
 #perfis > div {
-	margin-top: 30px;
+	margin-top: 100px;
     width: calc(33.33% - 20px); /* 3 colunas com espaço entre elas */
     padding: 10px;
     background-color: #fff; /* Cor de fundo dos perfis */
@@ -75,9 +88,9 @@ main {
 }
 
 #perfis > div {
-    width: calc(220px - 10px); /* 4 colunas com espaço entre elas */
-	height: 230px;
-    padding: 10px;
+    width: calc(240px - 10px);/* 4 colunas com espaço entre elas */
+	height: 250px;
+    padding: 15px;
     background-color: #E4EDFF; /* Cor de fundo dos perfis */
     border: 1px solid #ddd; /* Borda dos perfis */
 	border-radius: 15%;
