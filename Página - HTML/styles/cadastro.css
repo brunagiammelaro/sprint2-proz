@@ -59,6 +59,9 @@ header nav a:active {
 	color: #ffffff;
 	padding: 12px;
 	border-radius: 5px;
+	position: absolute;
+  	left: 10px; 
+  	top: 10px;
 }
 
 .botaoNavbarCadastro:hover {
