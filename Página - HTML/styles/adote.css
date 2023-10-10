@@ -4,12 +4,12 @@
 
 #banneradote {
     position: absolute;
-    top: 100px; /* Ajuste essa distância conforme a altura do seu cabeçalho */
+    top: 80px; /* Ajuste essa distância conforme a altura do seu cabeçalho */
     width: 100%; /* Ocupar toda a largura */
     background-color: #0292c9;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0px;
 }
 
 #perfis h3{
