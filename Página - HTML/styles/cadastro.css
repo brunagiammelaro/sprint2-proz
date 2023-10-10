@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lexend+Deca");
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 * {
 	margin: 0;
@@ -13,14 +11,13 @@
 header {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	height: 80px;
 	align-items: center;
 	background-color: #e4edff;
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: 2;
 }
 
 .containerLogoTitulo {
@@ -62,6 +59,9 @@ header nav a:active {
 	color: #ffffff;
 	padding: 12px;
 	border-radius: 5px;
+	position: absolute;
+  	left: 10px; 
+  	top: 10px;
 }
 
 .botaoNavbarCadastro:hover {
@@ -112,27 +112,11 @@ footer {
 	padding: 30px 0 20px 0;
 }
 
-.containerLinks {
-	display: flex;
-	margin-bottom: 20px;
-}
-
 .containerLinks div {
 	width: auto;
 	display: flex;
 	flex-direction: column;
 	margin: 0 50px 0 50px;
-}
-
-.containerLinks a {
-	text-decoration: none;
-	color: #e4edff;
-	margin-top: 20px;
-}
-
-.containerLinks h3 {
-	text-align: center;
-	text-transform: uppercase;
 }
 
 .dogImageFooter {
