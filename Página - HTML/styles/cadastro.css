@@ -14,26 +14,11 @@ header {
 }
 
 .botaoNavbarCadastro {
-<<<<<<< HEAD
 	font-weight: bold;
 	margin: 15px;
 	position: absolute;
   	left: 10px; 
   	top: 10px; 
-=======
-	background-color: #0292c9;
-	color: #ffffff;
-	padding: 12px;
-	border-radius: 5px;
-	position: absolute;
-  	left: 10px; 
-  	top: 10px;
-}
-
-.botaoNavbarCadastro:hover {
-	color: #ffffff;
-	background-color: #34aede;
->>>>>>> bce01e175db7a62d93f6884a11c52c0c2ed875e9
 }
 
 /* --------------------------------------------------------------------- */
@@ -46,62 +31,3 @@ main {
 
 footer {
 }
-<<<<<<< HEAD
-=======
-
-.containerPatinhas {
-	display: flex;
-	justify-content: space-between;
-	margin: 50px 200px 0 200px;
-	position: relative;
-	top: 10px;
-}
-
-.patinhaDogEsquerda {
-	position: relative;
-	top: -30px;
-	margin-right: 20px;
-}
-
-.patinhaCatDireita {
-	position: relative;
-	top: -30px;
-	margin-left: 20px;
-}
-
-.containerCatDogLinks {
-	background-color: #0292c9;
-	color: #e4edff;
-	display: flex;
-	align-items: end;
-	justify-content: space-between;
-}
-
-.containerFooterInfos {
-	padding: 30px 0 20px 0;
-}
-
-.containerLinks div {
-	width: auto;
-	display: flex;
-	flex-direction: column;
-	margin: 0 50px 0 50px;
-}
-
-.dogImageFooter {
-	width: 243px;
-	height: 170px;
-}
-
-.catImageFooter {
-	width: 243px;
-	height: 170px;
-}
-
-footer p {
-	text-align: center;
-	margin-top: 20px;
-	padding-top: 20px;
-	border-top: 1px solid #aba9a9;
-}
->>>>>>> bce01e175db7a62d93f6884a11c52c0c2ed875e9
