@@ -55,6 +55,10 @@
 	margin: 10px 10px;
 }
 
+.botao-principal:hover {
+	background-color: #59b7e1;
+}
+
 .container-cachorro {
 	margin-top: 5%;
 	margin-left: 3rem;
@@ -157,18 +161,14 @@
     padding: 10px;
 }
 
-.lista {
-	position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	font-family: 'inter', sans-serif;
-	color: #FFFFFF;
-	font-weight: 600;
-	background-color: transparent;
-	border: 1px solid #FFFFFF;
-    padding: 10px 25px ;
-	cursor: pointer;
+.imagem-adotar {
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 7px 7px 7px 0 #688a7c;
+}
+
+.imagem-adotar:hover {
+    opacity: 0.6;
 }
 
 .containerPatinhas {
