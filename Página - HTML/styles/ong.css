@@ -1,0 +1,109 @@
+.botaoNavbarOng {
+	color: #0292c9;
+}
+
+.bannerOngsSection {
+	background-color: #0292c9;
+	color: #ffffff;
+	padding: 60px 170px;
+}
+
+.bannerOngsSection h1 {
+	font-size: 30px;
+}
+
+.bannerOngsSection p {
+	font-size: 16px;
+	padding-top: 20px;
+	line-height: 1.5;
+}
+
+/* --------------------------------------------------------- */
+
+.cardsOngsSection {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	top: -35px;
+}
+
+.cardOngInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 400px;
+	background-color: #e4edff;
+	margin: 0 15px;
+	border-radius: 15px;
+	margin-bottom: 30px;
+}
+
+.containerLogoOng {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 50px 50px;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+}
+
+.logoOng {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.nomeOng {
+	font-size: 24px;
+	color: #0292c9;
+	margin-bottom: 30px;
+}
+
+.containerDescricaoOng {
+	width: 340px;
+	height: 120px;
+	margin-bottom: 30px;
+}
+
+.descricaoOng {
+	font-size: 18px;
+}
+
+.containerInformacoesOng {
+	font-size: 16px;
+	width: 340px;
+	margin-bottom: 15px;
+}
+
+.containerInformacoesOng p {
+	margin-bottom: 15px;
+}
+
+.containerRedesSociaisBotoes {
+	margin: 10px 0px;
+}
+
+.containerRedesSociaisBotoes img {
+	width: 50px;
+	height: 50px;
+}
+
+.containerRedesSociaisBotoes a {
+	filter: grayscale(1);
+	margin: 0 10px;
+}
+
+.containerRedesSociaisBotoes a:hover {
+	filter: grayscale(0);
+}
+
+@media (max-width: 800px) {
+	.bannerOngsSection {
+		padding: 60px 20px;
+	}
+	.containerRedesSociaisBotoes a {
+		filter: grayscale(0);
+	}
+}

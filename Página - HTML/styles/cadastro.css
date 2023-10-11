@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+}
+
+header {
+	justify-content: center;
+}
+
+.botaoNavbarCadastro {
+	font-weight: bold;
+	margin: 15px;
+	position: absolute;
+  	left: 10px; 
+  	top: 10px; 
+}
+
+/* --------------------------------------------------------------------- */
+
+main {
+	margin-top: 120px;
+}
+
+.box-principal {
+	border: 2px dashed #D1D1D1;
+ 	padding: 10px;
+	background-color: #E4EDFF41;
+	margin: 20px;
+	border-radius: 15px;
+}
+
+.box-com-borda-pontilhada {
+	border: 2px dashed #D1D1D1;
+ 	padding: 20px;
+	margin: 20px;
+	background-color: #E4EDFF53;
+	border-radius: 5px;
+}
+
+#titulo {
+	font-family: "Inter", sans-serif;
+	font-size: 32px;
+	color: #0292c9;
+	padding: 20px;
+	text-align: center;
+}
+
+.titulo-interno {
+	font-family: "Inter", sans-serif;
+	font-size: 20px;
+	color: #0292c9;
+	padding: 20px;
+	text-align: center;
+}
+
+.desejo-adotar {
+	text-align: center;
+}
+
+.desejo-adotar p {
+	display: inline-block;
+	justify-content: center;
+	padding: 0px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.desejo-adotar #titulo-marcacao {
+	background-color: #0292c950;
+	color: #ffffff;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	justify-content: center;
+}
+
+.caixa-marcacao {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 36px; 
+	height: 36px; 
+	border: 1px solid #CED4DA; 
+	background-color: #fff;
+	border-radius: 5px; 
+	outline: none; 
+	cursor: pointer;
+}
+
+.linha-um p {
+	font-size: 16px;
+	display: inline-block;
+	justify-content: space-between;
+	margin: 10px;
+	vertical-align: top;
+}
+
+.linha-um label {
+	display: block;
+	margin-bottom: 5px; 
+}
+
+.linha-um input[type="text"], input[type="number"], input[type="password"], input[type="date"] {
+	border: 1px solid #CED4DA;
+    border-radius: 5px; 
+	width: 500px;
+	height: 36px;
+}
+
+.linha-um #icomplemento,  #icidade, #idia {
+	border: 1px solid #CED4DA;
+	width: 350px;
+	height: 36px;
+}
+
+.linha-um  #iest {
+	border: 1px solid #CED4DA;
+	width: 130px;
+	height: 30px;
+}
+
+.linha-dois p {
+	margin: 10px;
+	padding-top: 15px;
+	margin-bottom: 15px;
+}
+
+input[type="radio"]{
+	display: inline-block;
+	border-radius: 5px;
+	text-align: center;
+	margin-right: 10px; 
+    margin-bottom: -10px; 
+}
+
+.linha-dois input[type="text"], input[type="number"] {
+	display: block;
+	margin-bottom: 5px; 
+	border: 1px solid #CED4DA;
+    border-radius: 5px; 
+	width: 200px;
+	height: 36px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+	flex: 1; 
+}
+
+.box-imagem {
+	background-color: white;
+    padding: 4px; 
+    border: 1px solid #CED4DA;
+	border-radius: 5px; 
+    display: flex; 
+    justify-content: right;
+    width: 300px;
+    height: 28px;
+}
+
+.botao-foto-pet {
+	background-color: #FBB540; 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 5px;
+    font-size: 14px; 
+    cursor: pointer; 
+}
+
+.botao-direita{
+	margin-left: 40px;
+	background-color: #5D636A; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+	border-radius: 5px; 
+    cursor: pointer; 
+	margin-left: 80%;
+	justify-content: right;
+}
+
+.botao-cadastro {
+	margin-left: 40px;
+	background-color: #0292C9; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+	border-radius: 5px; 
+    cursor: pointer; 
+	justify-content: center;
+}
+/* --------------------------------------------------------------------- */
+
+footer {
+}
