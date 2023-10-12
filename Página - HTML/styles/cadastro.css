@@ -24,7 +24,6 @@ header {
 /* --------------------------------------------------------------------- */
 
 main {
-	width: 80%;
 	margin: auto;
 	margin-top: 120px;
 }
@@ -77,22 +76,42 @@ main {
 	background-color: #0292c950;
 	color: #ffffff;
 	display: inline-block;
-	padding: 5px;
+	padding: 8px;
 	border-radius: 5px;
 	justify-content: center;
+	font-size: 18px;
 }
 
-.caixa-marcacao {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	width: 36px; 
-	height: 36px; 
-	border: 1px solid #CED4DA; 
-	background-color: #fff;
-	border-radius: 5px; 
-	outline: none; 
+input[type="radio"], input[type="checkbox"]{
+	vertical-align: middle; 
+    margin: 2px;
+	margin-left: 20px;
+	display: none;
+}
+
+label {
 	cursor: pointer;
+}
+
+input[type="radio"] + label:before, input[type="checkbox"] + label:before {
+	border: 1px solid #CED4DA;
+	background-color: #fff;
+    content: "\00a0";
+    display: inline-block;
+    font: 20px/2em sans-serif;
+    height: 36px;
+    margin: 0 .25em 0 0;
+    padding:0;
+    vertical-align: middle;
+    width: 36px;
+    border-radius:4px;
+}
+
+input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + label:before {
+	background: #0292c9;
+    color: #FFF;
+    content: "\2713";
+    text-align: center;
 }
 
 .linha-um p {
@@ -133,14 +152,6 @@ main {
 	margin-bottom: 15px;
 }
 
-input[type="radio"]{
-	display: inline-block;
-	border-radius: 5px;
-	text-align: center;
-	margin-right: 10px; 
-    margin-bottom: -10px; 
-}
-
 .linha-dois input[type="text"], input[type="number"] {
 	display: block;
 	margin-bottom: 5px; 
@@ -151,11 +162,13 @@ input[type="radio"]{
 }
 
 .container {
+	display: flex;
     justify-content: space-between;
+	height: auto;
 }
 
 .box {
-	flex: 1; 
+	flex: 2; 
 }
 
 .box-imagem {
@@ -178,29 +191,116 @@ input[type="radio"]{
     cursor: pointer; 
 }
 
-.botao-direita{
-	margin-left: 40px;
+.botao-direita {
+	display: block;
+	margin: 10px auto;
+	padding: 8px;
+	border: none;
+	cursor: pointer;
 	background-color: #5D636A; 
     color: white; 
-    padding: 10px 20px; 
-    border: none;
-	border-radius: 5px; 
-    cursor: pointer; 
-	margin-right: 90%;
-	display: flexbox;
 }
 
 .botao-cadastro {
-	margin-left: 40px;
+	padding: 12px;
+	border: none;
+	cursor: pointer;
 	background-color: #0292C9; 
     color: white; 
-    padding: 10px 20px; 
-    border: none;
-	border-radius: 5px; 
-    cursor: pointer; 
-	justify-content: center;
+    display: block;
+    margin: 0 auto;
 }
 /* --------------------------------------------------------------------- */
 
 footer {
+}
+
+
+@media screen and (max-width: 992px) {
+ 
+}
+@media screen and (min-width: 768px) {
+	
+	main {
+	    display: flex; 
+		flex-direction: column-reverse;
+    	align-items: center; 
+    	margin-top: 120px;
+	}
+	
+	.container {
+		display: inline-block;
+		width: 1300px;
+	}
+	
+	.box-principal {
+		padding: 5px;
+		margin: 15px;
+		width: 1300px;
+		justify-content: center;
+	}
+	
+	.box-com-borda-pontilhada {
+		padding: 10px;
+		margin: 15px;
+		width: 1200px;
+		justify-content: center;
+		align-items: center; 
+	}
+
+	
+}
+@media screen and (min-width: 480px) {
+	
+	.container {
+		display: inline-block;
+		justify-content: center;
+		height: auto;
+	}
+	
+	.box {
+		flex: 2; 
+	}
+
+	.linha-um, .linha-dois {
+		margin-left: 2px;
+	}
+
+	.linha-um input[type="text"], input[type="number"], input[type="password"], input[type="date"] {
+		width: 250px;
+		height: 36px;
+	}
+
+	.box-principal {
+		padding: 2px;
+		margin: 2px;
+	}
+	
+	.box-com-borda-pontilhada {
+		padding: 5px;
+		margin: 20px;
+	}
+
+	.linha-um p {
+		font-size: 8px;
+		display: block;
+	}
+
+	.linha-um #icomplemento,  #icidade, #idia {
+		border: 1px solid #CED4DA;
+		width: 250px;
+		height: 36px;
+	}
+	
+	.linha-um  #iest {
+		width: 100px;
+	}
+
+	.linha-dois input[type="text"], input[type="number"] {
+		width: 250px;
+	}
+	
+}
+@media screen and (orientation: landscape) {
+    
 }

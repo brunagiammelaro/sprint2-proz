@@ -13,7 +13,7 @@
         <div class="containerLogoTitulo">
             <img
                 class="logoSite"
-                src="../Página - HTML/Assets/Images/logo.png"
+                src="Assets/Images/logo.png"
                 width="112px"
                 height="68px"
                 alt="logo do site"
@@ -117,7 +117,8 @@
                         <input type="password" name="senha" id="isenha" autocomplete="senha" required>
                     </p>
                 </div>
-                    <div>
+                </br>
+                    <div class="botao">
                         <input type="submit" value="Salvar Informações" class="botao-direita">
                     </div>
                 </fieldset>
@@ -155,14 +156,14 @@
                         <label for="ifoto" class="botao-foto-pet">Imagem</label>
                         <input type="file" name="foto" id="ifoto" style="display: none;">
                     </div>
-                    <div>
+                    </br>
+                    <div class="botao">
                         <input type="submit" value="Salvar Informações" class="botao-direita">
                     </div>
             </div>
             </fieldset>
         </section>
-        </div>
-        <div class="container">
+        
         <section class="box">
             <fieldset class="box-com-borda-pontilhada">
                 <h3 class="titulo-interno">ADOÇÃO - INFORMAÇÕES DO TUTOR</h3>
@@ -170,34 +171,35 @@
                 <p id="titulo-marcacao">Você possui outros animais em casa?</p>
                 <input type="radio" name="opcao" id="inao" class="caixa-marcacao"><label for="inao">Não</label>
                 <input type="radio" name="opcao" id="isim" class="caixa-marcacao"><label for="isim">Sim</label>
-                <p>
-                    <label for="ioutrosanimais">Quais são os animais?</label>
-                    <input type="text" name="outrosanimais" id="ioutrosanimais" autocomplete="ioutrosanimais" required>
-                </p>
-                <p>Animais são gastos com alimentação, higiene e veterinário. Você está ciente?</p>
-                    <input type="radio" name="opcao" id="inao" class="caixa-marcacao"><label for="inao">Não</label>
-                    <input type="radio" name="opcao" id="isim" class="caixa-marcacao"><label for="isim">Sim</label>
-
-                <p>Sua casa oferece segurança para o animal?</p>
-                    <input type="radio" name="opcao" id="inao" class="caixa-marcacao"><label for="inao">Não</label>
-                    <input type="radio" name="opcao" id="isim" class="caixa-marcacao"><label for="isim">Sim</label>
-                <p>Quais características você procura em um pet?</p>
-                <p>Espécie:</p>
-                    <input type="radio" name="especie" id="icanino" class="caixa-marcacao"><label for="icanino">Canino</label>
-                    <input type="radio" name="especie" id="ifelino" class="caixa-marcacao"><label for="ifelino">Felino</label>
+                
+                <p>Animais dão gastos com alimentação, higiene e veterinário. Você está ciente?</p>
+                    <input type="radio" name="vet" id="ino" ><label for="ino">Não</label>
+                    <input type="radio" name="vet" id="iyes" ><label for="iyes">Sim</label>
+                
+                <p>Sua residencia oferece segurança para o animal?</p>
+                    <input type="radio" name="seguranca" id="isegsim" ><label for="isegsim">Não</label>
+                    <input type="radio" name="seguranca" id="isegnao" ><label for="isegnao">Sim</label>
+                
+                <p>Quais características você procura?</p>
+                <p>Espécie</p>
+                    <input type="radio" name="especie" id="icaninos" ><label for="icaninos">Canino</label>
+                    <input type="radio" name="especie" id="ifelinos" ><label for="ifelinos">Felino</label>
                 <p>Porte:</p>
-                    <input type="radio" name="tamanho" id="ipequeno" class="caixa-marcacao"><label for="ipequeno">Pequeno</label>
-                    <input type="radio" name="tamanho" id="imedio" class="caixa-marcacao"><label for="imedio">Médio</label>
-                    <input type="radio" name="tamanho" id="igrande" class="caixa-marcacao"><label for="igrande">Grande</label>
-
+                    <input type="radio" name="tamanho" id="ipequenos" ><label for="ipequenos">Pequeno</label>
+                    <input type="radio" name="tamanho" id="imedios" ><label for="imedios">Médio</label>
+                    <input type="radio" name="tamanho" id="igrandes" ><label for="igrandes">Grande</label>
+                
+                <div class="botao">
                     <input type="submit" value="Salvar Informações" class="botao-direita">
+                </div>
+
             </div>
             </fieldset>
         </section>
         </div>
         <section>
             <fieldset class="box-com-borda-pontilhada">
-                <input type="radio" name="esbas" id="iesbas" class="caixa-marcacao"><label for="iesbas">Declaro que li e concordo com os Termos de Uso e Política de Privacidade, incluindo o nosso uso de Cookies.</label>
+                <input type="checkbox" name="esbas" id="iesbas" class="caixa-marcacao"><label for="iesbas">Declaro que li e concordo com os Termos de Uso e Política de Privacidade, incluindo o nosso uso de Cookies.</label>
             </fieldset>
         </section>
         <div>
@@ -211,24 +213,24 @@
             <div class="containerPatinhasDog">
                 <img
                     class="patinhaDogEsquerda"
-                    src="../Página - HTML/Assets/Images/pata dog.svg"
+                    src="Assets/Images/pata dog.svg"
                     width="83px"
                     height="75px" />
                 <img
                     class="patinhaDogDireita"
-                    src="../Página - HTML/Assets/Images/pata dog.svg"
+                    src="Assets/Images/pata dog.svg"
                     width="83px"
                     height="75px" />
             </div>
             <div class="containerPatinhasCat">
                 <img
                     class="patinhaCatEsquerda"
-                    src="../Página - HTML/Assets/Images/pata cat.svg"
+                    src="Assets/Images/pata cat.svg"
                     width="74px"
                     height="75px" />
                 <img
                     class="patinhaCatDireita"
-                    src="../Página - HTML/Assets/Images/pata cat.svg"
+                    src="Assets/Images/pata cat.svg"
                     width="74px"
                     height="75px" />
             </div>
@@ -236,17 +238,19 @@
         <div class="containerCatDogLinks">
             <img
                 class="dogImageFooter"
-                src="../Página - HTML/Assets/Images/dog icon.png"
+                src="Assets/Images/dog icon.png"
                 width="243px"
                 height="170px" />
 
             <div class="containerFooterInfos">
-                <p>© 2023 Todos os direitos reservados à PawsOnCloud • Desenvolvido pelo Grupo I</p>
+                <p>
+                    © 2023 Todos os direitos reservados à PawsOnCloud • Desenvolvido pelo Grupo I
+                </p>
             </div>
 
             <img
                 class="catImageFooter"
-                src="../Página - HTML/Assets/Images/cat icon.png"
+                src="Assets/Images/cat icon.png"
                 width="121px"
                 height="138px" />
         </div>
