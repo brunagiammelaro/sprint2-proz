@@ -1,3 +1,100 @@
 .botaoNavbarAdote {
 	color: #0292c9;
 }
+
+#banneradote {
+    position: absolute;
+    top: 80px; /* Ajuste essa distância conforme a altura do seu cabeçalho */
+    width: 100%; /* Ocupar toda a largura */
+    background-color: #0292c9;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#perfis h3{
+	color: #FBB540;
+	font-size: 20px;
+	font-family: Lexend Deca;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+
+
+#perfis p{
+	color: #0292C9;
+	font-size: 12px;
+	font-family: Montserrat;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+
+#perfis button {
+	width: 80px;  
+	background: #FBB540; 
+	border-radius: 5px
+}
+
+#perfis button {
+	color: white;
+	font-size: 14px;
+	font-family: Montserrat;
+	font-weight: 400px;
+	word-wrap: break-word;
+}
+
+#perfis button:hover{
+	background: white;
+	color: #FBB540;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilos para o filtro na esquerda */
+#filtro {
+    width: 15%; /* Ajuste a largura conforme necessário */
+    padding: 20px;
+	margin-top: 80px;
+	border: 1px dashed #0292C9;
+	border-radius: 15px;
+}
+
+/* Estilos para os perfis no meio da página */
+#perfis {
+    width: 75%; /* Ajuste a largura conforme necessário */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 80px; /* Espaço entre os perfis */
+}
+
+/* Estilos para cada perfil */
+#perfis > div {
+	margin-top: 100px;
+    width: calc(33.33% - 20px); /* 3 colunas com espaço entre elas */
+    padding: 10px;
+    background-color: #fff; /* Cor de fundo dos perfis */
+    border: 1px solid #ddd; /* Borda dos perfis */
+}
+
+/* Estilos para as imagens dos perfis */
+#perfis img {
+    max-width: 100%;
+    height: auto;
+	border-radius: 15px;
+}
+
+#perfis > div {
+    width: calc(240px - 10px);/* 4 colunas com espaço entre elas */
+	height: 250px;
+    padding: 15px;
+    background-color: #E4EDFF; /* Cor de fundo dos perfis */
+    border: 1px solid #ddd; /* Borda dos perfis */
+	border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar itens horizontalmente */
+    text-align: center; /* Centralizar texto horizontalmente */}

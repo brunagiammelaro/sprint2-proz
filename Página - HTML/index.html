@@ -1,38 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="icon" href="Assets/Images/logo.png">
-    <link rel="stylesheet" href="Assets/style.css">
-</head>
-<body>
-    <header>
-        <img src="Assets/Images/logo.png" width="112px" height="68px" alt="logo do site" title="Logo">
-        <h2>Paws on Cloud</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Página Principal</a></li>
-                <li><a href="Adote.html">Adote</a></li>
-                <li><a href="Ong.html">Encontre uma ONG</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><button><a href="Cadastro.html">Cadastre-se</a></button></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
 
-    </div>
-    <footer>
-        
-        <img src="Assets/Images/dog icon.png" width="243px" height="170px">
-        <img src="Assets/Images/cat icon.png" width="121px" height="138px">
-        <img src="Assets/Images/pata dog.svg" width="83px" height="75px">
-        <img src="Assets/Images/pata dog.svg" width="83px" height="75px">
-        <img src="Assets/Images/pata cat.svg" width="74px" height="75px">
-        <img src="Assets/Images/pata cat.svg" width="74px" height="75px">
-        <p>© 2023 Todos os direitos reservados à () • Desenvolvido pelo Grupo I</p>
-    </footer>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>index</title>
+	<link rel="icon" href="Assets/Images/favicon.png" />
+	<link rel="stylesheet" href="styles/global.css" />
+	<link rel="stylesheet" href="styles/home.css" />
+</head>
+
+<body>
+	<header>
+		<div class="containerLogoTitulo">
+			<img class="logoSite" src="./Assets/Images/logo.png" width="112px" height="68px" alt="logo do site"
+				title="Logo" />
+			<h2>PawsOnCloud</h2>
+		</div>
+		<nav>
+			<a class="botaoNavbarHome" href="index.html">Página Principal</a>
+			<a class="botaoNavbarAdote" href="Adote.html">Adote</a>
+			<a class="botaoNavbarOng" href="Ong.html">Encontre uma ONG</a>
+			<a class="botaoNavbarBlog" href="Blog.html">Blog</a>
+			<a class="botaoNavbarCadastro" href="Cadastro.html">Cadastre-se</a>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<div class="container">
+				<div>
+					<h1 class="container-texto-principal">Transforme sua <br>casa em um lar <br>amoroso!</h1>
+					<p class="container-texto-secundario">Descubra a felicidade de ter um pet e transforme <br> sua vida para sempre</p>
+					<button class="botao-principal">
+						<div class="conteudo">
+							<a href="Adote.html">Adote aqui</a>
+							<img src="./Assets/Images/home/arrow-button.svg" alt="">
+						</div>
+					</button>
+				</div>
+				<img class="container-cachorro" src="./Assets/Images/home/portrait-adorable-dog.png" width="309px" height="472px" alt="Imagem de um cachorro">
+				<img class="container-gato" src="./Assets/Images/home/portrait-adorable-cat.png" width="202px" height="314px" alt="Imagem de um gato">
+			</div>
+		</section>
+
+		<section class="container-missao">
+			<div class="container-mensagem">
+				<img class="container-missao-cachorro" src="./Assets/Images/home/dog-ajudar.png" width="187px" height="127px" alt="Imagem de um cachorro">
+				<p class="mesagem">Encotre um novo amigo e descubra a alegria de dar e receber amor incondicional. Adote aogra!</p>
+				<img class="container-missao-gato" src="./Assets/Images/home/cats-ajudar.png" width="201px" height="127px" alt="Imagem de um gato">
+			</div>
+
+			<div>
+				<img class="container-tarefas-cachorros" src="./Assets/Images/home/beagles-filhotes-bocejando.png" width="550px" height="350px" alt="Cachorros bocejando">
+				<h2 class="tarefas">Nossas tarefas</h2>
+				<p class="container-texto-secundario">Buscamos facilitar o encontro de animais que estão sendo <br> doados e precisam de um lar.</p>
+				<p class="container-tarefas-texto"><img src="./Assets/Images/home/chek.svg" alt="cheked">Você pode entrar em contatodiretamente com <br> o
+					responsável pelo pet assim que encontrar um petque gostaria de <br> adotar em nossa plataforma.</p>
+				<p class="container-tarefas-texto"><img src="./Assets/Images/home/chek.svg" alt="checked">Você pode cadastrar um pet para adoção em nossa
+					plataforma <br> informando as informações necessárias</p>	
+			</div>
+
+			<div>
+				<h2 class="tarefas">Adote um pet</h2>
+				<div class="container-adotar">
+					<div class="imagem-com-texto-cao">
+						<h3 class="texto-animais">Adote um cachorro</h3>
+						<img src="./Assets/Images/home/adote-cao.png" width="557px" height="429px" alt="Imagem de um cão" class="imagem-adotar">
+					</div>
+					<div class="imagem-com-texto-gato">
+						<h3 class="texto-animais">Adote um gato</h3>
+						<img src="./Assets/Images/home/adote-cat.png" width="557px" height="429px" alt="Imagem de um gato" class="imagem-adotar">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="container-missao">
+		<div class="containerPatinhas">
+			<div class="containerPatinhasDog">
+				<img class="patinhaDogEsquerda" src="./Assets/Images/pata dog.svg" width="83px" height="75px"
+					alt="Pata esquerda" />
+				<img class="patinhaDogDireita" src="./Assets/Images/pata dog.svg" width="83px" height="75px"
+					alt="Pata direita" />
+			</div>
+			<div class="containerPatinhasCat">
+				<img class="patinhaCatEsquerda" src="./Assets/Images/pata cat.svg" width="74px" height="75px"
+					alt="Pata esquerda" />
+				<img class="patinhaCatDireita" src="./Assets/Images/pata cat.svg" width="74px" height="75px"
+					alt="Pata direita" />
+			</div>
+		</div>
+		<div class="containerCatDogLinks">
+			<img class="dogImageFooter" src="./Assets/Images/dog icon.png" width="243px" height="170px"
+				alt="Imagem de um cachorro" />
+
+			<div class="containerFooterInfos">
+				<div class="containerLinks">
+					<div class="colunaLinksQuemSomos">
+						<h3>Quem Somos</h3>
+						<a href="#">Sobre Nós</a>
+						<a href="#">Termo de adoção para Download</a>
+						<a href="#">Dúvidas Frequentes</a>
+					</div>
+					<div class="colunaLinksDivulgueUmPet">
+						<h3>Divulgue um Pet</h3>
+						<a href="#">Cadastrar Animal</a>
+					</div>
+					<div class="colunaLinksAdote">
+						<h3>Adote</h3>
+						<a href="#">Adote com responsabilidade</a>
+					</div>
+				</div>
+				<p>© 2023 Todos os direitos reservados à () • Desenvolvido pelo Grupo I</p>
+			</div>
+
+			<img class="catImageFooter" src="./Assets/Images/cat icon.png" width="121px" height="138px"
+				alt="Imagem de um gato" />
+		</div>
+	</footer>
 </body>
+
 </html>
