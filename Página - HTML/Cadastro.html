@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adote</title>
+    <title>Cadastro</title>
     <link rel="icon" href="Assets/Images/favicon.png"/>
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/cadastro.css"/>
@@ -36,8 +36,8 @@
                     <h3 class="titulo-interno">INFORMAÇÕES DE CADASTRO</h3>
                 <div class="desejo-adotar">
                         <p id="titulo-marcacao">Desejo:</p>
-                        <p><input type="radio" name="adotar" id="iadotar" class="caixa-marcacao"><label for="iadotar">Adotar</label></p>
-                        <p><input type="radio" name="doar" id="idoar" class="caixa-marcacao"><label for="idoar">Doar</label></p>
+                        <p><input type="radio" name="opcao" id="iadotar" class="caixa-marcacao"><label for="iadotar">Adotar</label></p>
+                        <p><input type="radio" name="opcao" id="idoar" class="caixa-marcacao"><label for="idoar">Doar</label></p>
                 </div>
                 <div class="linha-um">
                     <p>
@@ -117,9 +117,9 @@
                         <input type="password" name="senha" id="isenha" autocomplete="senha" required>
                     </p>
                 </div>
-                    <p>
+                    <div>
                         <input type="submit" value="Salvar Informações" class="botao-direita">
-                    </p>
+                    </div>
                 </fieldset>
         </section>
         <div class="container">
@@ -155,29 +155,32 @@
                         <label for="ifoto" class="botao-foto-pet">Imagem</label>
                         <input type="file" name="foto" id="ifoto" style="display: none;">
                     </div>
-
+                    <div>
                         <input type="submit" value="Salvar Informações" class="botao-direita">
+                    </div>
             </div>
             </fieldset>
         </section>
+        </div>
+        <div class="container">
         <section class="box">
             <fieldset class="box-com-borda-pontilhada">
                 <h3 class="titulo-interno">ADOÇÃO - INFORMAÇÕES DO TUTOR</h3>
             <div class="linha-dois">
                 <p id="titulo-marcacao">Você possui outros animais em casa?</p>
-                <input type="radio" name="nao" id="inao" class="caixa-marcacao"><label for="inao">Não</label>
-                <input type="radio" name="sim" id="isim" class="caixa-marcacao"><label for="isim">Sim</label>
+                <input type="radio" name="opcao" id="inao" class="caixa-marcacao"><label for="inao">Não</label>
+                <input type="radio" name="opcao" id="isim" class="caixa-marcacao"><label for="isim">Sim</label>
                 <p>
                     <label for="ioutrosanimais">Quais são os animais?</label>
                     <input type="text" name="outrosanimais" id="ioutrosanimais" autocomplete="ioutrosanimais" required>
                 </p>
                 <p>Animais são gastos com alimentação, higiene e veterinário. Você está ciente?</p>
-                    <input type="radio" name="nao" id="inao" class="caixa-marcacao"><label for="inao">Não</label>
-                    <input type="radio" name="sim" id="isim" class="caixa-marcacao"><label for="isim">Sim</label>
+                    <input type="radio" name="opcao" id="inao" class="caixa-marcacao"><label for="inao">Não</label>
+                    <input type="radio" name="opcao" id="isim" class="caixa-marcacao"><label for="isim">Sim</label>
 
                 <p>Sua casa oferece segurança para o animal?</p>
-                    <input type="radio" name="nao" id="inao" class="caixa-marcacao"><label for="inao">Não</label>
-                    <input type="radio" name="sim" id="isim" class="caixa-marcacao"><label for="isim">Sim</label>
+                    <input type="radio" name="opcao" id="inao" class="caixa-marcacao"><label for="inao">Não</label>
+                    <input type="radio" name="opcao" id="isim" class="caixa-marcacao"><label for="isim">Sim</label>
                 <p>Quais características você procura em um pet?</p>
                 <p>Espécie:</p>
                     <input type="radio" name="especie" id="icanino" class="caixa-marcacao"><label for="icanino">Canino</label>
