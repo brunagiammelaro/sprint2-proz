@@ -9,13 +9,13 @@
 .container {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .container-texto-principal {
 	font-family: 'Leckerli One', cursive;
 	color: #0292c9;
 	font-size: 5rem;
-	margin-left: 5rem;
 	line-height: 1;
 }
 
@@ -23,14 +23,12 @@
 	font-family: 'Inter', sans-serif;
 	color: #5D636A;
 	font-size: 20px;
-	margin-left: 5rem;
 	margin-top: 1rem;
 	font-weight: 600;
 }
 
 .botao-principal {
 	background-color: #0292c9;
-	margin-left: 5rem;
 	margin-top: 2rem;
 	border-radius: 5rem;
 	border: none;
@@ -38,17 +36,13 @@
 }
 
 .conteudo {
+	font-family: 'Inter', sans-serif;
+	font-size: 1rem;
+	color: #FFFFFF;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-left: 1rem;
-}
-
-.conteudo a {
-	font-family: 'Inter', sans-serif;
-	font-size: 1rem;
-	color: #FFFFFF;
-	text-decoration: none;
 }
 
 .conteudo img {
@@ -78,13 +72,12 @@
 .container-mensagem {
 	display: flex;
 	align-items: center;
-	justify-content: left;
+	justify-content: center;
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
 
 .container-missao-cachorro {
-	margin-left: 5rem;
 	padding-top: 8%;
 }
 
@@ -98,9 +91,12 @@
 }
 
 .container-missao-gato {
-	margin-right: 5rem;
 	padding-top: 8%;
-	
+}
+
+.container-tarefas {
+	display: flex;
+	justify-content: center;
 }
 
 .tarefas {
@@ -108,8 +104,16 @@
 	color: #5D636A;
 	font-size: 50px;
 	font-weight: bold;
-	margin: 10% 0 3% 5rem;
-	
+	margin: 10% 0 3% 0;
+}
+
+.tarefas-texto {
+	font-family: 'Inter', sans-serif;
+	color: #5D636A;
+	font-size: 20px;
+	margin-top: 1rem;
+	font-weight: 600;
+	margin-bottom: 5%;
 }
 
 .container-tarefas-texto {
@@ -117,10 +121,10 @@
 	color: #5D636A;
 	font-size: 16px;
 	font-weight: 400;
-	margin: 2% 0 3% 5rem;
+	margin: 2% 0 3% 0;
+	text-align: left;
 	display: flex;
-	align-items: center;
-	justify-content: left;
+	align-items: center;	
 }
 
 .container-tarefas-texto img {
@@ -128,25 +132,32 @@
 }
 
 .container-tarefas-cachorros {
-	float: right;
-	margin-right: 5rem;
+	margin-top: 5%;
+	margin-left: 1%;
 }
 
 .container-adotar {
+	font-family: 'Inter', sans-serif;
+	color: #5D636A;
+	font-size: 50px;
+	font-weight: bold;
+	margin: 7% 0 3% 0;
+}
+
+.adotar {
 	display: flex;
 	align-items: center;
 	text-align: center;
 	padding-bottom: 5%;
+	justify-content: center;
 }
 
 .imagem-com-texto-cao {
-    margin-left: 5rem;
-	margin-right: 2rem;
+	margin-right: 1rem;
 	position: relative;
 }
 
 .imagem-com-texto-gato {
-	margin-right: 5rem;
 	position: relative;
 }
 
