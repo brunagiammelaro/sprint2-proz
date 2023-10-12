@@ -24,6 +24,8 @@ header {
 /* --------------------------------------------------------------------- */
 
 main {
+	width: 80%;
+	margin: auto;
 	margin-top: 120px;
 }
 
@@ -149,7 +151,6 @@ input[type="radio"]{
 }
 
 .container {
-    display: flex;
     justify-content: space-between;
 }
 
@@ -185,8 +186,8 @@ input[type="radio"]{
     border: none;
 	border-radius: 5px; 
     cursor: pointer; 
-	margin-left: 80%;
-	justify-content: right;
+	margin-right: 90%;
+	display: flexbox;
 }
 
 .botao-cadastro {
