@@ -98,3 +98,9 @@ main {
     flex-direction: column;
     align-items: center; /* Centralizar itens horizontalmente */
     text-align: center; /* Centralizar texto horizontalmente */}
+
+.input-icon{
+    background-image: url(../Assets/Images/adoteImages/Search_Icon.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
+}
