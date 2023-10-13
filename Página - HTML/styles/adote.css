@@ -51,14 +51,14 @@
 main {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
 }
 
 /* Estilos para o filtro na esquerda */
 #filtro {
     width: 15%; /* Ajuste a largura conforme necessário */
     padding: 20px;
-	margin-top: 80px;
+	margin-top: 100px;
+    margin-left: 15px;
 	border: 1px dashed #0292C9;
 	border-radius: 15px;
 }
@@ -68,7 +68,7 @@ main {
     width: 75%; /* Ajuste a largura conforme necessário */
     display: flex;
     flex-wrap: wrap;
-    gap: 5px 80px; /* Espaço entre os perfis */
+    gap: 5px 60px; /* Espaço entre os perfis */
 }
 
 /* Estilos para cada perfil */
