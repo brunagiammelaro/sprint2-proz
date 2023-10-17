@@ -2,16 +2,62 @@
 	color: #0292c9;
 }
 
-#banneradote {
-    position: absolute;
-    top: 80px; /* Ajuste essa distância conforme a altura do seu cabeçalho */
-    width: 100%; /* Ocupar toda a largura */
+#banneradote{
     background-color: #0292c9;
-    color: #fff;
+    color: white;
+    width: 100%;
     text-align: center;
+    top: 80px;
     padding: 20px 0px;
+    position: absolute;
 }
 
+main{
+    display: flex;
+}
+
+#filtro {
+    width: 13%;
+    padding: 20px;
+    margin-top: 5.5%;
+    margin-left: 0.5%;
+    margin-right: 3%;
+    border: 1px dashed #0292C9;
+    border-radius: 15px;
+    display: absolute;
+}
+
+#perfis{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    gap: 0px 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#perfis > div{
+    margin-top: 7.5%;
+    width: 250px;
+    height: 240px;
+    background-color: #E4EDFF;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+#perfis >div:hover{
+    box-shadow: #0292C9 10px 10px 50px;
+    transition: 0.7s;
+}
+
+
+#perfis img {
+    width: 150px;
+    border-radius: 15px;
+    
+}
 #perfis h3{
 	color: #FBB540;
 	font-size: 20px;
@@ -26,74 +72,33 @@
 	font-size: 12px;
 	font-family: Montserrat;
 	font-weight: 400;
-	word-wrap: break-word;
-}
+    word-wrap: break-word;
 
-#perfis button {
-	width: 80px;  
-	background: #FBB540; 
-	border-radius: 5px
 }
 
 #perfis button {
 	color: white;
+    width: 100px;
+    height: 25px;  
+	background: #FBB540; 
+	border-radius: 5px;
 	font-size: 14px;
 	font-family: Montserrat;
-	font-weight: 400px;
-	word-wrap: break-word;
 }
 
 #perfis button:hover{
 	background: white;
 	color: #FBB540;
-}
-
-main {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Estilos para o filtro na esquerda */
-#filtro {
-    width: 15%; /* Ajuste a largura conforme necessário */
-    padding: 20px;
-	margin-top: 100px;
-    margin-left: 15px;
-	border: 1px dashed #0292C9;
-	border-radius: 15px;
-}
-
-/* Estilos para os perfis no meio da página */
-#perfis {
-    width: 75%; /* Ajuste a largura conforme necessário */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0px 60px; /* Espaço entre os perfis */
-}
-
-/* Estilos para cada perfil */
-#perfis > div {
-    margin-top: 100px;
-    width: calc(240px - 10px);/* 4 colunas com espaço entre elas */
-	height: 250px;
-    padding: 15px;
-    background-color: #E4EDFF; /* Cor de fundo dos perfis */
-    border: 1px solid #ddd; /* Borda dos perfis */
-	border-radius: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centralizar itens horizontalmente */
-    text-align: center; /* Centralizar texto horizontalmente */}
-
-/* Estilos para as imagens dos perfis */
-#perfis img {
-    max-width: 100%;
-    height: auto;
-	border-radius: 15px;
+    cursor: pointer;
 }
 
 .input-icon{
     background-image: url(../Assets/Images/adoteImages/Search_Icon.svg);
     background-repeat: no-repeat;
-    background-position: calc(100% - 10px);
+    background-position: 95%;
+    width: 150px;
+}
+
+#filtro select {
+    width: 150px;
 }
