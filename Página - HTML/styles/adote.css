@@ -17,23 +17,22 @@ main{
 }
 
 #filtro {
-    width: 13%;
+    width: 200px;
     padding: 20px;
-    margin-top: 5.5%;
-    margin-left: 0.5%;
+    margin-top: 100px;
+    margin-left: 1%;
     margin-right: 3%;
     border: 1px dashed #0292C9;
     border-radius: 15px;
-    display: absolute;
+    display: block;
 }
 
 #perfis{
-    width: 75%;
-    height: 100%;
+    width: 1000px;
+    margin-top: 2%;
     display: flex;
     gap: 0px 80px;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 #perfis > div{
@@ -49,7 +48,7 @@ main{
 
 #perfis >div:hover{
     box-shadow: #0292C9 10px 10px 50px;
-    transition: 0.7s;
+    transition: 0.8s;
 }
 
 
@@ -84,6 +83,8 @@ main{
 	border-radius: 5px;
 	font-size: 14px;
 	font-family: Montserrat;
+    margin-top: 10px;
+
 }
 
 #perfis button:hover{
@@ -101,4 +102,12 @@ main{
 
 #filtro select {
     width: 150px;
+}
+
+.pagina{
+    justify-content: center;
+    align-items: end;
+    text-align: end;
+    display: flex;
+    width: 100px;
 }
