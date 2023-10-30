@@ -26,6 +26,8 @@ header {
 main {
 	margin: auto;
 	margin-top: 120px;
+	width: 80%;
+	
 }
 
 .box-principal {
@@ -89,10 +91,6 @@ input[type="radio"], input[type="checkbox"]{
 	display: none;
 }
 
-label {
-	cursor: pointer;
-}
-
 input[type="radio"] + label:before, input[type="checkbox"] + label:before {
 	border: 1px solid #CED4DA;
 	background-color: #fff;
@@ -115,11 +113,8 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
 }
 
 .linha-um p {
-	font-size: 16px;
 	display: inline-block;
-	justify-content: space-between;
 	margin: 10px;
-	vertical-align: top;
 }
 
 .linha-um label {
@@ -134,9 +129,13 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
 	height: 36px;
 }
 
-.linha-um #icomplemento,  #icidade, #idia {
+#icpf {
+	width: 405px;
+}
+
+.linha-um #icomplemento, #icidade, #idia {
 	border: 1px solid #CED4DA;
-	width: 350px;
+	width: 250px;
 	height: 36px;
 }
 
@@ -161,16 +160,6 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
 	height: 36px;
 }
 
-.container {
-	display: flex;
-    justify-content: space-between;
-	height: auto;
-}
-
-.box {
-	flex: 2; 
-}
-
 .box-imagem {
 	background-color: white;
     padding: 4px; 
@@ -192,7 +181,7 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
 }
 
 .botao-direita {
-	display: block;
+	display: flex;
 	margin: 10px auto;
 	padding: 8px;
 	border: none;
@@ -216,80 +205,39 @@ footer {
 }
 
 
-@media screen and (max-width: 992px) {
- 
-}
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 200px) and (max-width: 600px) { /*celular*/
 	
 	main {
-	    display: flex; 
-		flex-direction: column-reverse;
-    	align-items: center; 
-    	margin-top: 120px;
-	}
-	
-	.container {
-		display: inline-block;
-		width: 1300px;
-	}
-	
-	.box-principal {
-		padding: 5px;
-		margin: 15px;
-		width: 1300px;
-		justify-content: center;
-	}
-	
-	.box-com-borda-pontilhada {
-		padding: 10px;
-		margin: 15px;
-		width: 1200px;
-		justify-content: center;
-		align-items: center; 
-	}
-
-	
-}
-@media screen and (min-width: 480px) {
-	
-	.container {
-		display: inline-block;
-		justify-content: center;
-		height: auto;
-	}
-	
-	.box {
-		flex: 2; 
-	}
-
-	.linha-um, .linha-dois {
-		margin-left: 2px;
+		width: 100%;
 	}
 
 	.linha-um input[type="text"], input[type="number"], input[type="password"], input[type="date"] {
 		width: 250px;
-		height: 36px;
+		height: 30px;
 	}
 
 	.box-principal {
-		padding: 2px;
-		margin: 2px;
+		margin: 4px;
+		width: 420px;
+		padding: 1px;
 	}
 	
 	.box-com-borda-pontilhada {
-		padding: 5px;
-		margin: 20px;
+		display: block;
+		padding: 10px;
+		margin: 10px;
 	}
 
 	.linha-um p {
-		font-size: 8px;
+		font-size: 2px;
 		display: block;
 	}
 
 	.linha-um #icomplemento,  #icidade, #idia {
 		border: 1px solid #CED4DA;
 		width: 250px;
-		height: 36px;
+		height: 30px;
 	}
 	
 	.linha-um  #iest {
@@ -298,9 +246,8 @@ footer {
 
 	.linha-dois input[type="text"], input[type="number"] {
 		width: 250px;
+		height: 30px;
 	}
-	
-}
-@media screen and (orientation: landscape) {
-    
+
+		
 }
