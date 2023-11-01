@@ -2,17 +2,58 @@
 	color: #0292c9;
 }
 
-#banneradote {
-    position: absolute;
-    top: 80px; /* Ajuste essa distância conforme a altura do seu cabeçalho */
-    width: 100%; /* Ocupar toda a largura */
-    background-color: #0292c9;
-    color: #fff;
+main{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding: 20px 0px;
+    flex-direction: column;
 }
 
-#perfis h3{
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.banneradote {
+    background-color: #0292c9;
+    color: white;
+    padding: 1.5%;
+    height: 100%; /* Preencher a largura total da página */
+    text-align: center;
+    margin: 0; /* Certifique-se de não haver margens indesejadas que afetem o posicionamento */
+}
+
+.filtro{
+    display: block;
+    flex-direction: column;
+    border: 1px dashed;
+    border-radius: 10px;
+    border-color: #0292C9;
+    margin: 30px 10px;
+    padding: 20px 40px;
+    text-align: left;
+}
+
+
+.perfis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+}
+
+.perfis > div{
+    background-color: #CFEFFC;
+    border-radius: 20px;
+    padding: 15px 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.perfis h3{
 	color: #FBB540;
 	font-size: 20px;
 	font-family: Lexend Deca;
@@ -20,8 +61,7 @@
 	word-wrap: break-word;
 }
 
-
-#perfis p{
+.perfis p{
 	color: #0292C9;
 	font-size: 12px;
 	font-family: Montserrat;
@@ -29,78 +69,61 @@
 	word-wrap: break-word;
 }
 
-#perfis button {
+.perfis button {
+    color: white;
 	width: 80px;  
 	background: #FBB540; 
-	border-radius: 5px
-}
-
-#perfis button {
-	color: white;
+	border-radius: 5px; 
 	font-size: 14px;
 	font-family: Montserrat;
 	font-weight: 400px;
 	word-wrap: break-word;
 }
 
-#perfis button:hover{
+
+.perfis button:hover{
+    transition: 0.5s;
 	background: white;
 	color: #FBB540;
 }
 
-main {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Estilos para o filtro na esquerda */
-#filtro {
-    width: 15%; /* Ajuste a largura conforme necessário */
-    padding: 20px;
-	margin-top: 100px;
-    margin-left: 15px;
-	border: 1px dashed #0292C9;
-	border-radius: 15px;
-}
-
-/* Estilos para os perfis no meio da página */
-#perfis {
-    width: 75%; /* Ajuste a largura conforme necessário */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px 60px; /* Espaço entre os perfis */
-}
-
-/* Estilos para cada perfil */
-#perfis > div {
-	margin-top: 100px;
-    width: calc(33.33% - 20px); /* 3 colunas com espaço entre elas */
-    padding: 10px;
-    background-color: #fff; /* Cor de fundo dos perfis */
-    border: 1px solid #ddd; /* Borda dos perfis */
-}
-
-/* Estilos para as imagens dos perfis */
-#perfis img {
+.perfis img {
     max-width: 100%;
     height: auto;
-	border-radius: 15px;
+	border-radius: 10px;
 }
 
-#perfis > div {
-    width: calc(240px - 10px);/* 4 colunas com espaço entre elas */
-	height: 250px;
-    padding: 15px;
-    background-color: #E4EDFF; /* Cor de fundo dos perfis */
-    border: 1px solid #ddd; /* Borda dos perfis */
-	border-radius: 15%;
+.pagina{
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Centralizar itens horizontalmente */
-    text-align: center; /* Centralizar texto horizontalmente */}
+    justify-content: center;
+}
+
+.pagina nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.pagina button{
+    color: white;
+	width: 20px;  
+	background: #FBB540; 
+	border-radius: 5px; 
+	font-size: 14px;
+	font-family: Montserrat;
+	font-weight: 400px;
+	word-wrap: break-word;
+}
+
+.pagina a{
+    color: white;
+    text-decoration: none;
+}
 
 .input-icon{
     background-image: url(../Assets/Images/adoteImages/Search_Icon.svg);
     background-repeat: no-repeat;
     background-position: calc(100% - 10px);
+    width: 153px;
 }
+
