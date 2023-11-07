@@ -2,62 +2,58 @@
 	color: #0292c9;
 }
 
-#banneradote{
-    background-color: #0292c9;
-    color: white;
-    width: 100%;
-    text-align: center;
-    top: 80px;
-    padding: 20px 0px;
-    position: absolute;
-}
-
 main{
     display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 
-#filtro {
-    width: 200px;
-    padding: 20px;
-    margin-top: 100px;
-    margin-left: 1%;
-    margin-right: 3%;
-    border: 1px dashed #0292C9;
-    border-radius: 15px;
-    display: block;
-}
-
-#perfis{
-    width: 1000px;
-    margin-top: 2%;
+section {
     display: flex;
-    gap: 0px 80px;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-#perfis > div{
-    margin-top: 7.5%;
-    width: 250px;
-    height: 240px;
-    background-color: #E4EDFF;
-    border: 1px solid #ddd;
-    border-radius: 25px;
+.banneradote {
+    background-color: #0292c9;
+    color: white;
+    padding: 1.5%;
+    height: 100%; /* Preencher a largura total da página */
+    text-align: center;
+    margin: 0; /* Certifique-se de não haver margens indesejadas que afetem o posicionamento */
+}
+
+.filtro{
+    display: block;
+    flex-direction: column;
+    border: 1px dashed;
+    border-radius: 10px;
+    border-color: #0292C9;
+    margin: 30px 10px;
+    padding: 20px 40px;
+    text-align: left;
+}
+
+
+.perfis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+}
+
+.perfis > div{
+    background-color: #CFEFFC;
+    border-radius: 20px;
+    padding: 15px 30px;
     align-items: center;
     text-align: center;
 }
 
-#perfis >div:hover{
-    box-shadow: #0292C9 10px 10px 50px;
-    transition: 0.8s;
-}
-
-
-#perfis img {
-    width: 150px;
-    border-radius: 15px;
-    
-}
-#perfis h3{
+.perfis h3{
 	color: #FBB540;
 	font-size: 20px;
 	font-family: Lexend Deca;
@@ -65,49 +61,74 @@ main{
 	word-wrap: break-word;
 }
 
-
-#perfis p{
+.perfis p{
 	color: #0292C9;
 	font-size: 12px;
 	font-family: Montserrat;
 	font-weight: 400;
-    word-wrap: break-word;
-
+	word-wrap: break-word;
 }
 
-#perfis button {
-	color: white;
-    width: 100px;
-    height: 25px;  
+.perfis button {
+    color: white;
+	width: 80px;  
 	background: #FBB540; 
-	border-radius: 5px;
+	border-radius: 5px; 
 	font-size: 14px;
 	font-family: Montserrat;
-    margin-top: 10px;
-
+	font-weight: 400px;
+	word-wrap: break-word;
 }
 
-#perfis button:hover{
+
+.perfis button:hover{
+    transition: 0.5s;
 	background: white;
 	color: #FBB540;
-    cursor: pointer;
 }
+
+.perfis img {
+    max-width: 100%;
+    height: auto;
+	border-radius: 10px;
+}
+
+/*
+.pagina{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.pagina nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.pagina button{
+    color: white;
+	width: 20px;  
+	background: #FBB540; 
+	border-radius: 5px; 
+	font-size: 14px;
+	font-family: Montserrat;
+	font-weight: 400px;
+	word-wrap: break-word;
+}
+
+.pagina a{
+    color: white;
+    text-decoration: none;
+}
+
+*/
 
 .input-icon{
     background-image: url(../Assets/Images/adoteImages/Search_Icon.svg);
     background-repeat: no-repeat;
-    background-position: 95%;
-    width: 150px;
+    background-position: calc(100% - 10px);
+    width: 153px;
 }
 
-#filtro select {
-    width: 150px;
-}
-
-.pagina{
-    justify-content: center;
-    align-items: end;
-    text-align: end;
-    display: flex;
-    width: 100px;
-}
