@@ -93,6 +93,12 @@ section {
 	border-radius: 10px;
 }
 
+.perfis img {
+    max-width: 100%;
+    height: auto;
+	border-radius: 10px;
+}
+
 /*
 .pagina{
     display: flex;
