@@ -93,9 +93,18 @@ section {
 	border-radius: 10px;
 }
 
+.perfis img {
+    max-width: 100%;
+    height: auto;
+	border-radius: 10px;
+}
+
+/*
 .pagina{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
 .pagina nav{
@@ -119,6 +128,8 @@ section {
     color: white;
     text-decoration: none;
 }
+
+*/
 
 .input-icon{
     background-image: url(../Assets/Images/adoteImages/Search_Icon.svg);
