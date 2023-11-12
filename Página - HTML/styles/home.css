@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Leckerli+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Leckerli+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Leckerli+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Leckerli+One&display=swap");
 
 .botaoNavbarHome {
 	color: #0292c9;
@@ -13,16 +13,16 @@
 }
 
 .container-texto-principal {
-	font-family: 'Leckerli One', cursive;
+	font-family: "Leckerli One", cursive;
 	color: #0292c9;
 	font-size: 5rem;
 	line-height: 1;
 }
 
 .container-texto-secundario {
-	font-family: 'Inter', sans-serif;
-	color: #5D636A;
-	font-size: 20px;
+	font-family: "Inter", sans-serif;
+	color: #5d636a;
+	font-size: 1.25rem;
 	margin-top: 1rem;
 	font-weight: 600;
 }
@@ -36,9 +36,9 @@
 }
 
 .conteudo {
-	font-family: 'Inter', sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 1rem;
-	color: #FFFFFF;
+	color: #ffffff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -46,7 +46,7 @@
 }
 
 .conteudo img {
-	margin: 10px 10px;
+	margin: 0.625rem 0.625rem;
 }
 
 .botao-principal:hover {
@@ -66,7 +66,7 @@
 }
 
 .container-missao {
-	background-color: #E4EDFF;
+	background-color: #e4edff;
 }
 
 .container-mensagem {
@@ -81,13 +81,13 @@
 	padding-top: 8%;
 }
 
-.mesagem {
-	font-family: 'Inter', sans-serif;
-	color: #5D636A;
-	font-size: 22px;
+.mensagem {
+	font-family: "Inter", sans-serif;
+	color: #5d636a;
+	font-size: 1.375rem;
 	font-weight: bold;
 	padding: 8% 1% 0 1%;
-	text-align: center;	
+	text-align: center;
 }
 
 .container-missao-gato {
@@ -100,31 +100,31 @@
 }
 
 .tarefas {
-	font-family: 'Inter', sans-serif;
-	color: #5D636A;
-	font-size: 50px;
+	font-family: "Inter", sans-serif;
+	color: #5d636a;
+	font-size: 3.125rem;
 	font-weight: bold;
 	margin: 10% 0 3% 0;
 }
 
 .tarefas-texto {
-	font-family: 'Inter', sans-serif;
-	color: #5D636A;
-	font-size: 20px;
+	font-family: "Inter", sans-serif;
+	color: #5d636a;
+	font-size: 1.25rem;
 	margin-top: 1rem;
 	font-weight: 600;
 	margin-bottom: 5%;
 }
 
 .container-tarefas-texto {
-	font-family: 'Inter', sans-serif;
-	color: #5D636A;
-	font-size: 16px;
+	font-family: "Inter", sans-serif;
+	color: #5d636a;
+	font-size: 1rem;
 	font-weight: 400;
 	margin: 2% 0 3% 0;
 	text-align: left;
 	display: flex;
-	align-items: center;	
+	align-items: center;
 }
 
 .container-tarefas-texto img {
@@ -137,9 +137,9 @@
 }
 
 .container-adotar {
-	font-family: 'Inter', sans-serif;
-	color: #5D636A;
-	font-size: 50px;
+	font-family: "Inter", sans-serif;
+	color: #5d636a;
+	font-size: 3.125rem;
 	font-weight: bold;
 	margin: 7% 0 3% 0;
 }
@@ -162,32 +162,241 @@
 }
 
 .texto-animais {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	font-family: 'inter', sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: "inter", sans-serif;
 	font-weight: bold;
-    color: #FFFFFF;
-    padding: 10px;
+	color: #ffffff;
+	padding: 0.625rem;
 }
 
 .imagem-adotar {
-    opacity: 1;
-    transition: 400ms;
-    box-shadow: 7px 7px 7px 0 #688a7c;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 4px 4px 13px 0 #688a7c;
+	border-radius: 0.625rem;
 }
 
 .imagem-adotar:hover {
-    opacity: 0.6;
+	opacity: 0.6;
 }
 
 .containerPatinhas {
 	margin-top: 0;
 }
 
-@media (min-width:769px) and ( max-width: 1230px) {
+@media screen and (min-width: 769px) and (max-width: 1230px) {
 	main {
 		margin-top: 150px !important;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.container-texto-principal {
+		padding-top: 1rem;
+		font-size: 4rem;
+	}
+	.container-cachorro {
+		width: 10.9375rem;
+		height: 18.75rem;
+	}
+
+	.container-gato {
+		width: 7.8125rem;
+		height: 11.25rem;
+	}
+
+	.container-missao-cachorro,
+	.container-missao-gato {
+		display: none;
+	}
+
+	.mensagem {
+		font-size: 1.15625rem;
+	}
+
+	.mensagem br {
+		display: none;
+	}
+
+	.tarefas {
+		font-size: 2.375rem;
+	}
+
+	.tarefas-texto {
+		font-size: large;
+	}
+
+	.container-tarefas-texto {
+		font-size: small;
+	}
+
+	.container-tarefas-cachorros {
+		width: 20.625rem;
+		height: 15.625rem;
+	}
+
+	.container-adotar {
+		font-size: 2.375rem;
+	}
+
+	.imagem-com-texto-cao img,
+	.imagem-com-texto-gato img {
+		width: 26.25rem;
+		height: auto;
+	}
+
+	@media only screen and (max-width: 900px) {
+		.container-cachorro,
+		.container-gato {
+			display: none;
+		}
+
+		.container-texto-principal {
+			font-size: 5rem;
+		}
+
+		.container-missao-cachorro,
+		.container-missao-gato,
+		.container-tarefas-cachorros {
+			display: none;
+		}
+
+		.container-mensagem {
+			max-width: 37.5rem;
+			margin: 5% auto;
+		}
+
+		.mensagem {
+			font-size: 1.1875rem;
+			text-align: left;
+		}
+
+		.tarefas {
+			font-size: 3rem;
+		}
+
+		.tarefas-texto {
+			font-size: 1.3rem;
+		}
+
+		.container-adotar {
+			font-size: 3rem;
+			justify-content: left;
+			padding-left: 2rem;
+		}
+
+		.adotar {
+			flex-direction: column;
+			align-items: center;
+			align-items: flex-start;
+		}
+
+		.imagem-com-texto-cao img,
+		.imagem-com-texto-gato img {
+			width: 90%;
+		}
+
+		.imagem-com-texto-cao,
+		.imagem-com-texto-gato {
+			padding-bottom: 1rem;
+		}
+
+		.imagem-com-texto-cao {
+			margin-right: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.container-texto-principal {
+		font-size: 3.5rem;
+	}
+
+	.container-mensagem {
+		max-width: 29.375rem;
+	}
+
+	.mensagem {
+		font-size: 1rem;
+	}
+
+	.tarefas {
+		font-size: 2rem;
+	}
+
+	.tarefas-texto {
+		font-size: 1rem;
+	}
+
+	.container-adotar {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.container-texto-principal {
+		font-size: 2rem;
+	}
+
+	.container-texto-secundario {
+		font-size: 0.625rem;
+	}
+
+	.botao-principal img {
+		width: 1.75rem;
+		height: 1.75rem;
+	}
+
+	.conteudo {
+		font-size: 0.75rem;
+	}
+
+	.container-mensagem {
+		max-width: 15.625rem;
+	}
+
+	.mensagem {
+		font-size: 0.75rem;
+	}
+
+	.container-tarefas {
+		max-width: 15.625rem;
+		margin: 0 auto;
+	}
+
+	.tarefas {
+		font-size: 1.5rem;
+	}
+
+	.tarefas-texto {
+		font-size: 0.75rem;
+	}
+
+	.tarefas-texto br {
+		display: none;
+	}
+
+	.container-tarefas-texto {
+		font-size: 0.625rem;
+	}
+
+	.container-tarefas-texto br {
+		display: none;
+	}
+
+	.container-tarefas-texto img {
+		margin-right: 0.625rem;
+	}
+
+	.container-adotar {
+		font-size: 1.5rem;
+		padding-left: 1rem;
+	}
+
+	.texto-animais {
+		font-size: 0.8rem;
 	}
 }
