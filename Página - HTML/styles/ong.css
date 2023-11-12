@@ -100,6 +100,11 @@
 	filter: grayscale(0);
 }
 
+@media (min-width:769px) and ( max-width: 1230px) {
+	main {
+		margin-top: 150px !important;
+	}
+}
 @media (max-width: 800px) {
 	.bannerOngsSection {
 		padding: 60px 20px;

@@ -138,3 +138,8 @@ section {
     width: 153px;
 }
 
+@media (min-width:769px) and ( max-width: 1230px) {
+	main {
+		margin-top: 150px !important;
+	}
+}

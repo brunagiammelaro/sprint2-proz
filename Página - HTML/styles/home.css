@@ -185,3 +185,9 @@
 .containerPatinhas {
 	margin-top: 0;
 }
+
+@media (min-width:769px) and ( max-width: 1230px) {
+	main {
+		margin-top: 150px !important;
+	}
+}

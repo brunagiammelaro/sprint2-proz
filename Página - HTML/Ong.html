@@ -7,35 +7,37 @@
 		<link rel="icon" href="Assets/Images/favicon.png" />
 		<link rel="stylesheet" href="styles/global.css" />
 		<link rel="stylesheet" href="styles/ong.css" />
+		<script src="../Arquivos - Js/layoutMobileScript.js" defer></script>
 	</head>
 	<body>
-		<header>
+		<header id="header">
 			<div class="containerLogoTitulo">
 				<img
-					class="logoSite"
-					src="../Página - HTML/Assets/Images/logo.png"
-					width="112px"
-					height="68px"
-					alt="logo do site"
-					title="Logo" />
+				class="logoSite"
+				src="../Página - HTML/Assets/Images/logo.png"
+				width="112px"
+				height="68px"
+				alt="logo do site"
+				title="Logo" />
 				<h2>PawsOnCloud</h2>
 			</div>
-			<nav>
-				<a class="botaoNavbarHome" href="index.html">Página Principal</a>
-				<a class="botaoNavbarAdote" href="Adote.html">Adote</a>
-				<a class="botaoNavbarOng" href="Ong.html">Encontre uma ONG</a>
-				<a class="botaoNavbarBlog" href="Blog.html">Blog</a>
-				<a class="botaoNavbarCadastro" href="Cadastro.html"
-					>Cadastre-se</a
-				>
+			<nav id="nav">
+				<button id="btn-mobile" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir menu"><span id="hamburger"></span></button>
+				<ul id="menu" role="menu">
+					<li><a class="botaoNavbarHome" href="index.html">Página Principal</a></li>
+					<li><a class="botaoNavbarAdote" href="Adote.html">Adote</a></li>
+					<li><a class="botaoNavbarOng" href="Ong.html">Encontre uma ONG</a></li>
+					<li><a class="botaoNavbarBlog" href="Blog.html">Blog</a></li>
+					<li><a class="botaoNavbarCadastro" href="Cadastro.html">Cadastre-se</a></li>
+				</ul>
 			</nav>
 		</header>
-
+		
 		<main>
 			<section class="bannerOngsSection">
 				<h1>Ongs e Protetores</h1>
 				<p
-					>Se você está buscando apoio para resgatar e abrigar um
+				>Se você está buscando apoio para resgatar e abrigar um
 					animal necessitado, estamos aqui para ajudar. Abaixo, você
 					encontrará informações sobre organizações dedicadas à
 					proteção e resgate de animais. Essas ONGs estão prontas para
@@ -51,11 +53,11 @@
 				<div class="cardOngInfo">
 					<div class="containerLogoOng">
 						<img
-							src="Assets/Images/ongsImages/amigo_animal.png"
-							alt="Logo ONG Amigo Animal"
+						src="Assets/Images/ongsImages/amigo_animal.png"
+						alt="Logo ONG Amigo Animal"
 							class="logoOng" />
 					</div>
-
+					
 					<div class="containerNomeOng">
 						<h2 class="nomeOng">Amigo Animal</h2>
 					</div>
@@ -66,8 +68,8 @@
 							Hoje, mantêm um abrigo com mais de 1.000 cães,
 							priorizando o cuidado e adoção responsável de
 							animais.</p
-						>
-					</div>
+							>
+						</div>
 
 					<div class="containerInformacoesOng">
 						<p><strong>Cidade:</strong> Curitiba - PR</p>
@@ -77,16 +79,16 @@
 						>
 						<p><strong>Telefone:</strong> (41) 99975-2711</p>
 						<p
-							><strong>Email:</strong>
+						><strong>Email:</strong>
 							amigoanimal@amigoanimal.org.br</p
 						>
 						<p
 							><strong>Site: </strong
-							><a
+								><a
 								href="https://amigoanimal.org.br/"
 								target="_blank"
 								>amigoanimal.org.br</a
-							></p
+								></p
 						>
 					</div>
 
@@ -97,23 +99,23 @@
 								alt="Botão para o Instagram"
 						/></a>
 						<a href="#" target="_blank"
-							><img
-								src="Assets/Images/ongsImages/facebook.png"
-								alt="Botão para o Facebook"
+						><img
+						src="Assets/Images/ongsImages/facebook.png"
+						alt="Botão para o Facebook"
 						/></a>
 						<a href="#" target="_blank"
-							><img
+						><img
 								src="Assets/Images/ongsImages/whatsapp.png"
 								alt="Botão para o WhatsApp"
 						/></a>
 						<a href="#" target="_blank"
-							><img
+						><img
 								src="Assets/Images/ongsImages/twitter.png"
 								alt="Botão para o Twitter"
 						/></a>
 					</div>
 				</div>
-
+				
 				<div class="cardOngInfo">
 					<div class="containerLogoOng">
 						<img
@@ -121,17 +123,17 @@
 							alt="Logo ONG Cão sem dono"
 							class="logoOng" />
 					</div>
-
+					
 					<div class="containerNomeOng">
 						<h2 class="nomeOng">Projeto Cão Sem Dono</h2>
 					</div>
-
+					
 					<div class="containerDescricaoOng">
 						<p class="descricaoOng"
-							>O Cão Sem Dono é uma ONG fundada em 2005, que
-							resgata e cuida de animais de rua. Possuem dois
-							abrigos em Itapecerica da Serra, SP, e contam com
-							uma equipe dedicada de 26 membros.</p
+						>O Cão Sem Dono é uma ONG fundada em 2005, que
+						resgata e cuida de animais de rua. Possuem dois
+						abrigos em Itapecerica da Serra, SP, e contam com
+						uma equipe dedicada de 26 membros.</p
 						>
 					</div>
 
@@ -140,47 +142,47 @@
 						<p
 							><strong>Endereço:</strong> Rua Honório Serpa, 259,
 							Jardim Vergueiro</p
-						>
-						<p><strong>Telefone:</strong> (00) 0000-0000</p>
-						<p><strong>Email:</strong> clinica@caosemdono.com.br</p>
+							>
+							<p><strong>Telefone:</strong> (00) 0000-0000</p>
+							<p><strong>Email:</strong> clinica@caosemdono.com.br</p>
 						<p
 							><strong>Site: </strong
 							><a
 								href="https://www.caosemdono.com.br/"
 								target="_blank"
 								>caosemdono.com.br</a
-							>
-						</p>
-					</div>
-
-					<div class="containerRedesSociaisBotoes">
-						<a href="#" target="_blank"
+								>
+							</p>
+						</div>
+						
+						<div class="containerRedesSociaisBotoes">
+							<a href="#" target="_blank"
 							><img
-								src="Assets/Images/ongsImages/instagram.png"
-								alt="Botão para o Instagram"
-						/></a>
-						<a href="#" target="_blank"
+							src="Assets/Images/ongsImages/instagram.png"
+							alt="Botão para o Instagram"
+							/></a>
+							<a href="#" target="_blank"
 							><img
-								src="Assets/Images/ongsImages/facebook.png"
-								alt="Botão para o Facebook"
+							src="Assets/Images/ongsImages/facebook.png"
+							alt="Botão para o Facebook"
 						/></a>
 						<a href="#" target="_blank"
 							><img
 								src="Assets/Images/ongsImages/whatsapp.png"
 								alt="Botão para o WhatsApp"
-						/></a>
-						<a href="#" target="_blank"
-							><img
+								/></a>
+								<a href="#" target="_blank"
+								><img
 								src="Assets/Images/ongsImages/twitter.png"
 								alt="Botão para o Twitter"
-						/></a>
-					</div>
+								/></a>
+							</div>
 				</div>
-
+				
 				<div class="cardOngInfo">
 					<div class="containerLogoOng">
 						<img
-							src="Assets/Images/ongsImages/vira_lata_vira_amigo.png"
+						src="Assets/Images/ongsImages/vira_lata_vira_amigo.png"
 							alt="Logo ONG Vira Lata Vira Amigo"
 							class="logoOng" />
 					</div>
@@ -191,23 +193,23 @@
 
 					<div class="containerDescricaoOng">
 						<p class="descricaoOng"
-							>A “Vira Lata Vira Amigo” é uma ONG criada
-							oficialmente em setembro de 2016 que se dedica desde
-							2012 em atividades de proteção, ajuda, e procura de
-							lares a cães da Grande São Paulo.</p
+						>A “Vira Lata Vira Amigo” é uma ONG criada
+						oficialmente em setembro de 2016 que se dedica desde
+						2012 em atividades de proteção, ajuda, e procura de
+						lares a cães da Grande São Paulo.</p
 						>
 					</div>
 
 					<div class="containerInformacoesOng">
 						<p><strong>Cidade:</strong> Ibiúna - SP</p>
 						<p
-							><strong>Endereço:</strong> Estrada José PiresFilho,
-							40, Zona Rural</p
+						><strong>Endereço:</strong> Estrada José PiresFilho,
+						40, Zona Rural</p
 						>
 						<p><strong>Telefone:</strong> (11) 99615-0749</p>
 						<p
-							><strong>Email:</strong>
-							contato@viralataviraamigo.org.br</p
+						><strong>Email:</strong>
+						contato@viralataviraamigo.org.br</p
 						>
 						<p
 							><strong>Site: </strong
@@ -221,21 +223,21 @@
 
 					<div class="containerRedesSociaisBotoes">
 						<a href="#" target="_blank"
-							><img
-								src="Assets/Images/ongsImages/instagram.png"
-								alt="Botão para o Instagram"
+						><img
+						src="Assets/Images/ongsImages/instagram.png"
+						alt="Botão para o Instagram"
 						/></a>
 						<a href="#" target="_blank"
-							><img
-								src="Assets/Images/ongsImages/facebook.png"
-								alt="Botão para o Facebook"
+						><img
+						src="Assets/Images/ongsImages/facebook.png"
+						alt="Botão para o Facebook"
 						/></a>
 						<a href="#" target="_blank"
 							><img
 								src="Assets/Images/ongsImages/whatsapp.png"
 								alt="Botão para o WhatsApp"
-						/></a>
-						<a href="#" target="_blank"
+								/></a>
+								<a href="#" target="_blank"
 							><img
 								src="Assets/Images/ongsImages/twitter.png"
 								alt="Botão para o Twitter"
@@ -249,24 +251,24 @@
 			<div class="containerPatinhas">
 				<div class="containerPatinhasDog">
 					<img
-						class="patinhaDogEsquerda"
+					class="patinhaDogEsquerda"
 						src="../Página - HTML/Assets/Images/pata dog.svg"
 						width="83px"
 						height="75px" />
 					<img
-						class="patinhaDogDireita"
-						src="../Página - HTML/Assets/Images/pata dog.svg"
-						width="83px"
-						height="75px" />
+					class="patinhaDogDireita"
+					src="../Página - HTML/Assets/Images/pata dog.svg"
+					width="83px"
+					height="75px" />
 				</div>
 				<div class="containerPatinhasCat">
 					<img
-						class="patinhaCatEsquerda"
-						src="../Página - HTML/Assets/Images/pata cat.svg"
-						width="74px"
-						height="75px" />
+					class="patinhaCatEsquerda"
+					src="../Página - HTML/Assets/Images/pata cat.svg"
+					width="74px"
+					height="75px" />
 					<img
-						class="patinhaCatDireita"
+					class="patinhaCatDireita"
 						src="../Página - HTML/Assets/Images/pata cat.svg"
 						width="74px"
 						height="75px" />
@@ -274,11 +276,11 @@
 			</div>
 			<div class="containerCatDogLinks">
 				<img
-					class="dogImageFooter"
-					src="../Página - HTML/Assets/Images/dog icon.png"
-					width="243px"
-					height="170px" />
-
+				class="dogImageFooter"
+				src="../Página - HTML/Assets/Images/dog icon.png"
+				width="243px"
+				height="170px" />
+				
 				<div class="containerFooterInfos">
 					<div class="containerLinks">
 						<div class="colunaLinksQuemSomos">
@@ -303,11 +305,22 @@
 				</div>
 
 				<img
-					class="catImageFooter"
-					src="../Página - HTML/Assets/Images/cat icon.png"
-					width="121px"
-					height="138px" />
+				class="catImageFooter"
+				src="../Página - HTML/Assets/Images/cat icon.png"
+				width="121px"
+				height="138px" />
 			</div>
 		</footer>
+
+		
+		<!-- <script>
+			function clickMenu() {
+				if (itens.style.display == 'block') {
+					itens.style.display = 'none'
+				} else {
+					itens.style.display = 'block'
+				}
+			}
+		</script> -->
 	</body>
 </html>

@@ -6,22 +6,32 @@
     <title>Blog</title>
     <link rel="icon" href="Assets/Images/logo.png">
     <link rel="stylesheet" href="Assets/style.css">
+    <script src="../Arquivos - Js/layoutMobileScript.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="Assets/Images/logo.png" width="112px" height="68px" alt="logo do site" title="Logo">
-        <h2>Paws on Cloud</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Página Principal</a></li>
-                <li><a href="Adote.html">Adote</a></li>
-                <li><a href="Ong.html">Encontre uma ONG</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><button><a href="Cadastro.html">Cadastre-se</a></button></li>
+    <header id="header">
+        <div class="containerLogoTitulo">
+            <img
+            class="logoSite"
+            src="../Página - HTML/Assets/Images/logo.png"
+            width="112px"
+            height="68px"
+            alt="logo do site"
+            title="Logo" />
+            <h2>PawsOnCloud</h2>
+        </div>
+        <nav id="nav">
+            <button id="btn-mobile" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir menu"><span id="hamburger"></span></button>
+            <ul id="menu" role="menu">
+                <li><a class="botaoNavbarHome" href="index.html">Página Principal</a></li>
+                <li><a class="botaoNavbarAdote" href="Adote.html">Adote</a></li>
+                <li><a class="botaoNavbarOng" href="Ong.html">Encontre uma ONG</a></li>
+                <li><a class="botaoNavbarBlog" href="Blog.html">Blog</a></li>
+                <li><a class="botaoNavbarCadastro" href="Cadastro.html">Cadastre-se</a></li>
             </ul>
         </nav>
     </header>
-    <div>
+<div>
         <main>
             <h1>Blog</h1>
             <section>
