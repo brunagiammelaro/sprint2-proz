@@ -14,7 +14,9 @@
 
 :small_blue_diamond: [Layout da Aplicação](#layout-da-aplicação-dash)
 
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+:small_blue_diamond: [Acesso ao Projeto](#acesso-ao-projeto)
+
+:small_blue_diamond: [Desenvolvedores](#desenvolvedores)
 
 
 ## Descrição do projeto 
