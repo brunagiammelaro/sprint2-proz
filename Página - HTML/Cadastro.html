@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <script src="../Arquivos - Js/cadastro.js" defer></script>
     <link rel="icon" href="Assets/Images/favicon.png"/>
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/cadastro.css"/>
@@ -46,7 +47,7 @@
                     </p>
                     <p>
                         <label for="icpf">*CPF</label>
-                        <input type="number" name="cpf" id="icpf" autocomplete="cpf">
+                        <input type="text" name="cpf" id="icpf" placeholder="000.000.000-00" maxlength="14" pattern="[0-9]*" inputmode="numeric">
                     </p>
                     <p>
                         <label for="idia">*Data de nascimento</label>
