@@ -1,5 +1,3 @@
-/* General Styles */
-
 .botaoNavbarAdote {
     color: #0292c9;
 }
@@ -93,7 +91,9 @@ section {
 	border-radius: 10px;
 }
 
-.input-icon {
+.input-icon{
+    background-image: url(../Assets/Images/adoteImages/Search_Icon.svg);
+    background-repeat: no-repeat;
     background-position: calc(100% - 10px);
     width: 153px;
 }

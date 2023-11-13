@@ -10,22 +10,23 @@
     <link rel="stylesheet" href="styles/cadastro.css"/>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="containerLogoTitulo">
             <img
-                class="logoSite"
-                src="Assets/Images/logo.png"
-                width="112px"
-                height="68px"
-                alt="logo do site"
-                title="Logo" />
+            class="logoSite"
+            src="../Página - HTML/Assets/Images/logo.png"
+            width="112px"
+            height="68px"
+            alt="logo do site"
+            title="Logo" />
             <h2>PawsOnCloud</h2>
         </div>
-
-        <nav>
-            <a class="botaoNavbarCadastro" href="index.html">Retornar</a>
+        <nav id="nav">
+            <button id="btn-mobile" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir menu"><span id="hamburger"></span></button>
+            <ul id="menu" role="menu">
+                <li><a class="botaoNavbarCadastro" href="index.html">Retornar</a></li>
+            </ul>
         </nav>
-        
     </header>
 
     <main>
