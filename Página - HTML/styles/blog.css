@@ -1,0 +1,30 @@
+.botaoNavbarBlog {
+	color: #0292c9;
+}
+
+.bannerBlogSection {
+	background-color: #0292c9;
+	color: #ffffff;
+	padding: 60px 170px 90px 170px;
+}
+
+.bannerBlogSection h1 {
+	font-size: 30px;
+}
+
+.bannerBlogSection p {
+	font-size: 18px;
+	padding-top: 20px;
+	line-height: 1.5;
+}
+
+
+.post-blog {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
