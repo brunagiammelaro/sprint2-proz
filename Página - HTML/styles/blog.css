@@ -20,11 +20,46 @@
 
 
 .post-blog {
-    max-width: 600px;
+    max-width: 80%;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+    background-color: #E4EDFF;
+}
+
+.post-image {
+    margin-right: 20px;
+    width: 100px; 
+    height: auto;
+}
+
+.post-content {
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+    padding-left: 5%;
+}
+
+.postagem-blog {
+    font-size: 20px;
+    color: #000000;
+    margin: 15px;
+}
+
+h2 {
+    font-size: 24px;
+	color: #0292c9;
+    margin: 15px;
+}
+
+.autor {
+    font-size: 20px;
+    color: #948f8f;
+    margin: 15px;
 }
