@@ -136,6 +136,12 @@
 	margin-left: 1%;
 }
 
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .container-adotar {
 	font-family: "Inter", sans-serif;
 	color: #5d636a;
@@ -336,7 +342,11 @@
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
+	.container {
+		justify-content: left;
+		margin-left: 2rem;
+	}
 	.container-texto-principal {
 		font-size: 2rem;
 	}
@@ -355,7 +365,7 @@
 	}
 
 	.container-mensagem {
-		max-width: 15.625rem;
+		max-width: 21.875rem;
 	}
 
 	.mensagem {
@@ -363,7 +373,7 @@
 	}
 
 	.container-tarefas {
-		max-width: 15.625rem;
+		max-width: 21.875rem;
 		margin: 0 auto;
 	}
 
@@ -393,10 +403,21 @@
 
 	.container-adotar {
 		font-size: 1.5rem;
-		padding-left: 1rem;
+		padding-left: 1.4rem;
 	}
 
 	.texto-animais {
 		font-size: 0.8rem;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.container-mensagem {
+		max-width: 20.9375rem;
+	}
+
+	.container-tarefas {
+		max-width: 20.9375rem;
+		margin: 0 auto;
 	}
 }
