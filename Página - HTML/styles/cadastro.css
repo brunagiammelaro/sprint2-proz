@@ -9,17 +9,58 @@
 	font-size: 16px;
 }
 
-/* header {
-	justify-content: center;
+/* ------------------------- HEADER PÁGINA CADASTRO ------------------------------ */
+
+#header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+	background-color: #e4edff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
 }
 
-.botaoNavbarCadastro {
+.containerLogoTitulo {
+	display: flex;
+	align-items: center;
+	margin-left: 85px;
+}
+
+#header h2 {
+	font-family: "Leckerli One", cursive;
+	margin-left: 15px;
+	font-size: 32px;
+	color: #0292c9;
+}
+
+.logoSite {
+	width: 112px;
+}
+
+#menu {
+	display: flex;
+	list-style: none;
+	margin-right: 85px;
+}
+
+.botaoNavbarRetornar {
+	background-color: #0292c9;
+	color: #ffffff !important;
+	padding: 12px;
+	border-radius: 5px;
+	margin-left: 50px;
+	text-decoration: none;
 	font-weight: bold;
-	margin: 15px;
-	position: absolute;
-  	left: 10px; 
-  	top: 10px; 
-} */
+}
+
+.botaoNavbarRetornar:hover {
+	color: #ffffff;
+	background-color: #34aede;
+}
 
 /* --------------------------------------------------------------------- */
 
@@ -199,14 +240,93 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
     display: block;
     margin: 0 auto;
 }
-/* --------------------------------------------------------------------- */
 
-footer {
+/* ------------------------- FOOTER PÁGINA CADASTRO ------------------------------ */
+
+.containerPatinhas {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 200px 0 200px;
+	position: relative;
+	top: 10px;
+}
+
+.patinhaDogEsquerda {
+	position: relative;
+	top: -30px;
+	margin-right: 20px;
+}
+
+.patinhaCatDireita {
+	position: relative;
+	top: -30px;
+	margin-left: 20px;
+}
+
+.containerCatDogLinks {
+	background-color: #0292c9;
+	color: #e4edff;
+	display: flex;
+	justify-content: center;
+}
+
+.containerFooterInfos {
+	padding: 30px 0 20px 0;
+	text-align: center;
+}
+
+.dogImageFooter, .catImageFooter {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.containerPatinhas { 
+		display: none !important;
+	}
+	
+	.containerCatDogLinks {
+		margin-top: 35px;
+	}
 }
 
 
+/* --------------------------------------------------------------------- */
+@media screen and (max-width: 426px) {
+	#header {
+		height: 130px;
+	}
+
+	.containerLogoTitulo {
+		margin: auto;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#header h2 {
+		font-family: "Leckerli One", cursive;
+		margin-left: 10px;
+		font-size: 28px;
+		color: #0292c9;
+	}
+
+	.logoSite {
+		scale: 0.7;
+	}
+
+	main {
+		margin-top: 150px !important;
+	}
+}
 
 @media screen and (min-width: 200px) and (max-width: 600px) { /*celular*/
+
+	#menu {
+		margin-right: 30px;
+	}
+
+	.containerLogoTitulo {
+		margin-left: 25px;
+	}
 	
 	main {
 		width: 100%;
@@ -248,6 +368,5 @@ footer {
 		width: 250px;
 		height: 30px;
 	}
-
 		
 }
