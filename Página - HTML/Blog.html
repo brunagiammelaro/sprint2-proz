@@ -4,35 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="icon" href="Assets/Images/logo.png">
-    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="icon" href="Assets/Images/favicon.png"/>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/blog.css" />
+    <script src="../Arquivos - Js/layoutMobileScript.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="Assets/Images/logo.png" width="112px" height="68px" alt="logo do site" title="Logo">
-        <h2>Paws on Cloud</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Página Principal</a></li>
-                <li><a href="Adote.html">Adote</a></li>
-                <li><a href="Ong.html">Encontre uma ONG</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><button><a href="Cadastro.html">Cadastre-se</a></button></li>
+    <header id="header">
+        <div class="containerLogoTitulo">
+            <img
+            class="logoSite"
+            src="../Página - HTML/Assets/Images/logo.png"
+            width="112px"
+            height="68px"
+            alt="logo do site"
+            title="Logo" />
+            <h2>PawsOnCloud</h2>
+        </div>
+        <nav id="nav">
+            <button id="btn-mobile" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir menu"><span id="hamburger"></span></button>
+            <ul id="menu" role="menu">
+                <li><a class="botaoNavbarHome" href="index.html">Página Principal</a></li>
+                <li><a class="botaoNavbarAdote" href="Adote.html">Adote</a></li>
+                <li><a class="botaoNavbarOng" href="Ong.html">Encontre uma ONG</a></li>
+                <li><a class="botaoNavbarBlog" href="Blog.html">Blog</a></li>
+                <li><a class="botaoNavbarCadastro" href="Cadastro.html">Cadastre-se</a></li>
             </ul>
         </nav>
     </header>
-    <div>
+<div>
+        <main>
+            <section class="bannerBlogSection">
+            <h1>Blog</h1>
+                <p>
+                    Você ama os animais tanto quanto nós? Se a resposta é sim, você está no lugar certo! Nosso blog é dedicado ao bem-estar dos nossos amigos de quatro patas. Aqui, você encontrará informações valiosas, dicas práticas e histórias inspiradoras para garantir que os animais de estimação e os animais em geral vivam vidas felizes, saudáveis e plenas. Nossos artigos abrangem uma ampla variedade de tópicos, desde cuidados básicos, treinamento e alimentação até notícias sobre direitos dos animais e histórias de adoção bem-sucedidas. Estamos empenhados em promover uma convivência harmoniosa entre humanos e animais, além de fornecer recursos úteis para ajudá-lo a ser o melhor guardião de seus amigos peludos.
+                </p>
+            </section>
+            
+            <section class="post-blog">
+            <div class="post-imagem">
+                <img src="Assets/Images/blog/imagem1.png" alt="imagem de cão" class="post-imagem" >
+                <p class="overlay-rectangle">CÃES</p>
+            </div>
+            <div  class="post-content">
+                <h2><a href="">Adaptação do cão a nova família</a></h2>
+                <p class="postagem-blog">São tantas novidade, nem sempre, é fácil para os bichinhos. Tem o estranhamento com o novo espaço, a ansiedade por separação quando os donos precisam sair e a dificuldade em fazer as necessidades onde deve.</p>
+                <p class="autor">Publicado por Bruna em 03 de outubro de 2023</p>
+            </div>
+            </section>
 
+            <section class="post-blog">
+                <div class="post-imagem">
+                    <img src="Assets/Images/blog/imagem2.png" alt="imagem de cão" class="post-imagem" >
+                    <p class="overlay-rectangle">GATOS</p>
+                </div>
+            <div  class="post-content">
+                <h2><a href="">Vacinas anuais para gatos?</a></h2>
+                <p class="postagem-blog">Junto com a vacina antirrábica, que combate a raiva felina, saiba quais são as vacinas obrigatórias...</p>
+                <p class="autor">Publicado por Lucas em 02 de outubro de 2023</p>
+            </div>
+            </section>
+
+            <section class="post-blog">
+                <div class="post-imagem">
+                    <img src="Assets/Images/blog/imagem3.png" alt="imagem de cão" class="post-imagem" >
+                    <p class="overlay-rectangle">PETS</p>
+                </div>
+            <div class="post-content">
+                <h2> <a href="">Importância do passeio na rotina do pet</a></h2>
+                <p class="postagem-blog">Passear com os animais de estimação é algo que precisa estar na rotina dos tutores, pois é nesse momento que o bichinho faz as necessidades e pratica atividade física. Conheça outros benefícios...</p>
+                <p class="autor">Publicado por Roque em 02 de outubro de 2023</p>
+                </div>
+            </section>
+        </main>
     </div>
     <footer>
-        
-        <img src="Assets/Images/dog icon.png" width="243px" height="170px">
-        <img src="Assets/Images/cat icon.png" width="121px" height="138px">
-        <img src="Assets/Images/pata dog.svg" width="83px" height="75px">
-        <img src="Assets/Images/pata dog.svg" width="83px" height="75px">
-        <img src="Assets/Images/pata cat.svg" width="74px" height="75px">
-        <img src="Assets/Images/pata cat.svg" width="74px" height="75px">
-        <p>© 2023 Todos os direitos reservados à () • Desenvolvido pelo Grupo I</p>
+        <div class="containerPatinhas">
+            <div class="containerPatinhasDog">
+                <img
+                class="patinhaDogEsquerda"
+                    src="../Página - HTML/Assets/Images/pata dog.svg"
+                    width="83px"
+                    height="75px" />
+                <img
+                class="patinhaDogDireita"
+                src="../Página - HTML/Assets/Images/pata dog.svg"
+                width="83px"
+                height="75px" />
+            </div>
+            <div class="containerPatinhasCat">
+                <img
+                class="patinhaCatEsquerda"
+                src="../Página - HTML/Assets/Images/pata cat.svg"
+                width="74px"
+                height="75px" />
+                <img
+                class="patinhaCatDireita"
+                    src="../Página - HTML/Assets/Images/pata cat.svg"
+                    width="74px"
+                    height="75px" />
+            </div>
+        </div>
+        <div class="containerCatDogLinks">
+            <img
+            class="dogImageFooter"
+            src="../Página - HTML/Assets/Images/dog icon.png"
+            width="243px"
+            height="170px" />
+            
+            <div class="containerFooterInfos">
+                <div class="containerLinks">
+                    <div class="colunaLinksQuemSomos">
+                        <h3>Quem Somos</h3>
+                        <a href="#">Sobre Nós</a>
+                        <a href="#">Termo de adoção para Download</a>
+                        <a href="#">Dúvidas Frequentes</a>
+                    </div>
+                    <div class="colunaLinksDivulgueUmPet">
+                        <h3>Divulgue um Pet</h3>
+                        <a href="#">Cadastrar Animal</a>
+                    </div>
+                    <div class="colunaLinksAdote">
+                        <h3>Adote</h3>
+                        <a href="#">Adote com responsabilidade</a>
+                    </div>
+                </div>
+                <p>© 2023 Todos os direitos reservados à () • Desenvolvido
+                    pelo Grupo I</p>
+            </div>
+
+            <img
+            class="catImageFooter"
+            src="../Página - HTML/Assets/Images/cat icon.png"
+            width="121px"
+            height="138px" />
+        </div>
     </footer>
-</body>
-</html>

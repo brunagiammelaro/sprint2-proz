@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <script src="../Arquivos - Js/cadastro.js" defer></script>
     <link rel="icon" href="Assets/Images/favicon.png"/>
-    <link rel="stylesheet" href="styles/global.css">
+    <!-- <link rel="stylesheet" href="styles/global.css"> -->
     <link rel="stylesheet" href="styles/cadastro.css"/>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="containerLogoTitulo">
             <img
-                class="logoSite"
-                src="Assets/Images/logo.png"
-                width="112px"
-                height="68px"
-                alt="logo do site"
-                title="Logo" />
+            class="logoSite"
+            src="../Página - HTML/Assets/Images/logo.png"
+            width="112px"
+            height="68px"
+            alt="logo do site"
+            title="Logo" />
             <h2>PawsOnCloud</h2>
         </div>
-
-        <nav>
-            <a class="botaoNavbarCadastro" href="index.html">Retornar</a>
+        <nav id="nav">
+            <ul id="menu" role="menu">
+                <li><a class="botaoNavbarRetornar" href="index.html">Retornar</a></li>
+            </ul>
         </nav>
-        
     </header>
 
     <main>
@@ -46,7 +47,7 @@
                     </p>
                     <p>
                         <label for="icpf">*CPF</label>
-                        <input type="number" name="cpf" id="icpf" autocomplete="cpf">
+                        <input type="text" name="cpf" id="icpf" placeholder="000.000.000-00" maxlength="14" pattern="[0-9]*" inputmode="numeric">
                     </p>
                     <p>
                         <label for="idia">*Data de nascimento</label>
@@ -123,7 +124,7 @@
                     </div>
                 </fieldset>
         </section>
-        <div class="container">
+        
         <section class="box">
             <fieldset class="box-com-borda-pontilhada">
                 <h3 class="titulo-interno">DOAR - INFORMAÇÕES DO PET</h3>
@@ -196,7 +197,7 @@
             </div>
             </fieldset>
         </section>
-        </div>
+        
         <section>
             <fieldset class="box-com-borda-pontilhada">
                 <input type="checkbox" name="esbas" id="iesbas" class="caixa-marcacao"><label for="iesbas">Declaro que li e concordo com os Termos de Uso e Política de Privacidade, incluindo o nosso uso de Cookies.</label>

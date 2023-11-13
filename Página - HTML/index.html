@@ -8,21 +8,29 @@
 	<link rel="icon" href="Assets/Images/favicon.png" />
 	<link rel="stylesheet" href="styles/global.css" />
 	<link rel="stylesheet" href="styles/home.css" />
+	<script src="../Arquivos - Js/layoutMobileScript.js" defer></script>
 </head>
-
 <body>
-	<header>
+	<header id="header">
 		<div class="containerLogoTitulo">
-			<img class="logoSite" src="./Assets/Images/logo.png" width="112px" height="68px" alt="logo do site"
-				title="Logo" />
+			<img
+			class="logoSite"
+			src="./Assets/Images/logo.png"
+			width="112px"
+			height="68px"
+			alt="logo do site"
+			title="Logo" />
 			<h2>PawsOnCloud</h2>
 		</div>
-		<nav>
-			<a class="botaoNavbarHome" href="index.html">Página Principal</a>
-			<a class="botaoNavbarAdote" href="Adote.html">Adote</a>
-			<a class="botaoNavbarOng" href="Ong.html">Encontre uma ONG</a>
-			<a class="botaoNavbarBlog" href="Blog.html">Blog</a>
-			<a class="botaoNavbarCadastro" href="Cadastro.html">Cadastre-se</a>
+		<nav id="nav">
+			<button id="btn-mobile" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir menu"><span id="hamburger"></span></button>
+			<ul id="menu" role="menu">
+				<li><a class="botaoNavbarHome" href="index.html">Página Principal</a></li>
+				<li><a class="botaoNavbarAdote" href="Adote.html">Adote</a></li>
+				<li><a class="botaoNavbarOng" href="Ong.html">Encontre uma ONG</a></li>
+				<li><a class="botaoNavbarBlog" href="Blog.html">Blog</a></li>
+				<li><a class="botaoNavbarCadastro" href="Cadastro.html">Cadastre-se</a></li>
+			</ul>
 		</nav>
 	</header>
 
@@ -49,7 +57,7 @@
 		<section class="container-missao">
 			<div class="container-mensagem">
 				<img class="container-missao-cachorro" src="./Assets/Images/home/dog-ajudar.png" width="187px" height="127px" alt="Imagem de um cachorro">
-				<p class="mesagem">Encotre um novo amigo e descubra a alegria de dar e receber amor <br> incondicional. Adote aogra!</p>
+				<p class="mensagem">Encotre um novo amigo e descubra a alegria de dar e receber amor <br> incondicional. Adote aogra!</p>
 				<img class="container-missao-gato" src="./Assets/Images/home/cats-ajudar.png" width="201px" height="127px" alt="Imagem de um gato">
 			</div>
 
@@ -65,7 +73,7 @@
 				<img class="container-tarefas-cachorros" src="./Assets/Images/home/beagles-filhotes-bocejando.png" width="550px" height="350px" alt="Cachorros bocejando">	
 			</div>
 
-			<div class="container">
+			<div id="container">
 				<div>
 					<h2 class="container-adotar">Adote um pet</h2>
 					<div class="adotar">

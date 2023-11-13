@@ -10,7 +10,7 @@
 	font-family: "Inter", sans-serif;
 }
 
-header {
+#header {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -29,7 +29,7 @@ header {
 	margin-left: 85px;
 }
 
-header h2 {
+#header h2 {
 	font-family: "Leckerli One", cursive;
 	margin-left: 15px;
 	font-size: 32px;
@@ -40,26 +40,31 @@ header h2 {
 	width: 112px;
 }
 
-header nav {
+#menu {
+	display: flex;
+	list-style: none;
 	margin-right: 85px;
 }
 
-header nav a {
+#menu a {
 	margin-left: 50px;
 	text-decoration: none;
-	color: #000000;
-	font-weight: bold;
-}
-
-header nav a:hover,
-header nav a:active {
 	color: #0292c9;
 	font-weight: bold;
 }
 
+#btn-mobile {
+	display: none;
+}
+
+#menu a:hover,
+#menu a:active {
+	color: #fab440;
+}
+
 .botaoNavbarCadastro {
 	background-color: #0292c9;
-	color: #ffffff;
+	color: #ffffff !important;
 	padding: 12px;
 	border-radius: 5px;
 }
@@ -76,9 +81,6 @@ main {
 }
 
 /* --------------------------------------------------------------------- */
-
-footer {
-}
 
 .containerPatinhas {
 	display: flex;
@@ -150,4 +152,236 @@ footer p {
 	margin-top: 20px;
 	padding-top: 20px;
 	border-top: 1px solid #aba9a9;
+}
+
+/* RESPONSIVIDADE DO SITE */
+
+@media screen and (min-width: 769px) and (max-width: 1230px) {
+	#header {
+		display: flex;
+		flex-direction: column;
+		height: 150px;
+		align-self: center;
+
+		align-items: center;
+	}
+	.containerLogoTitulo {
+		margin-top: 15px;
+	}
+	#nav {
+		margin-bottom: 20px;
+	}
+
+	#menu {
+		margin: 0px;
+	}
+
+	.botaoNavbarHome {
+		margin: 0px !important;
+	}
+
+	#menu a {
+		margin-left: 40px;
+	}
+
+	.dogImageFooter,
+	.catImageFooter {
+		display: none;
+	}
+	.containerCatDogLinks {
+		justify-content: center;
+	}
+
+	.containerPatinhas {
+		margin: 50px 50px 0 50px;
+	}
+
+	main {
+		margin-top: 150px !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.containerLogoTitulo {
+		margin-left: 25px;
+	}
+
+	#btn-mobile {
+		display: block;
+	}
+
+	#menu {
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 80px;
+		right: 0px;
+		background-color: #0292c9;
+		z-index: 1000;
+
+		margin: 0;
+		padding: 0;
+
+		height: 0;
+		transition: 0.6s;
+		visibility: hidden;
+		overflow-y: hidden;
+	}
+
+	#menu li {
+		padding: 1rem 0;
+		margin: 0 1rem;
+		border-bottom: 2px solid #fafbfe45;
+	}
+	#menu a {
+		color: #ffffff;
+		padding: 12px !important;
+	}
+
+	#menu a:hover {
+		background-color: #e4edff !important;
+		color: #0292c9 !important;
+		border-radius: 5px !important;
+	}
+
+	#nav.active #menu {
+		height: calc(100vh - 80px);
+		visibility: visible;
+		overflow-y: auto;
+	}
+
+	#btn-mobile {
+		display: flex;
+		padding: 8px 2px;
+		margin-right: 20px;
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+
+	#hamburger {
+		width: 20px;
+		border-top: 3px solid;
+		color: #0292c9;
+	}
+
+	#hamburger::after,
+	#hamburger::before {
+		content: "";
+		display: block;
+		width: 20px;
+		height: 3px;
+		background: currentColor;
+		margin-top: 5px;
+		transition: 0.3s;
+		position: relative;
+	}
+
+	#nav.active #hamburger {
+		border-top-color: transparent;
+	}
+
+	#nav.active #hamburger::before {
+		transform: rotate(135deg);
+	}
+
+	#nav.active #hamburger::after {
+		transform: rotate(-135deg);
+		top: -8px;
+	}
+
+	.botaoNavbarCadastro {
+		background-color: #fafbfe !important;
+		color: #0292c9 !important;
+	}
+
+	.botaoNavbarCadastro:hover {
+		background-color: #fab440 !important;
+		color: #e4edff !important;
+		padding: 12px !important;
+		border-radius: 5px !important;
+	}
+
+	.dogImageFooter,
+	.catImageFooter {
+		display: none;
+	}
+	.containerCatDogLinks {
+		justify-content: center;
+	}
+
+	.containerPatinhas {
+		margin: 50px 50px 0 50px;
+	}
+
+	.containerLinks {
+		flex-direction: column;
+		text-align: left;
+	}
+
+	.containerLinks div {
+		margin-top: 20px;
+	}
+
+	.containerLinks a {
+		margin: 8px 10px;
+	}
+
+	.containerLinks h3 {
+		text-align: left;
+		margin-bottom: 15px;
+	}
+
+	.containerFooterInfos p {
+		margin: 0 50px !important;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.containerPatinhas {
+		display: none;
+	}
+
+	.containerLogoTitulo {
+		margin-left: 0px;
+	}
+
+	#header h2 {
+		font-size: 28px;
+		margin-left: 10px;
+	}
+
+	.logoSite {
+		/* scale: 0.7; */
+		width: 80px;
+		height: auto;
+		margin-left: 12px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#header {
+		height: 120px;
+	}
+
+	.containerLogoTitulo {
+		margin: auto;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#header h2 {
+		font-family: "Leckerli One", cursive;
+		margin-left: 10px;
+		font-size: 28px;
+		color: #0292c9;
+	}
+
+	.logoSite {
+		scale: 0.7;
+	}
+
+	main {
+		margin-top: 120px !important;
+	}
 }

@@ -1,0 +1,112 @@
+.botaoNavbarBlog {
+	color: #0292c9;
+}
+
+.bannerBlogSection {
+	background-color: #0292c9;
+	color: #ffffff;
+	padding: 60px 170px 90px 170px;
+}
+
+.bannerBlogSection h1 {
+	font-size: 30px;
+}
+
+.bannerBlogSection p {
+	font-size: 18px;
+	padding-top: 20px;
+	line-height: 1.5;
+}
+
+
+.post-blog {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+    background-color: #E4EDFF;
+}
+
+.post-imagem {
+    position: relative;
+    margin-right: 20px;
+    max-width: 400px; 
+    padding: 20px;
+    height: auto;
+}
+
+.post-content {
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+    padding-left: 5%;
+}
+
+.postagem-blog {
+    font-size: 20px;
+    color: #000000;
+    margin: 15px;
+}
+
+h2 {
+    font-size: 24px;
+	color: #0292c9;
+    margin: 15px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #0292c9;
+}
+
+.autor {
+    font-size: 20px;
+    color: #948f8f;
+    margin: 15px;
+}
+
+.overlay-rectangle {
+    position: absolute; 
+    top: 100px; 
+    left: 10; 
+    width: 15%; 
+    height: 20px; 
+    padding: 10px;
+    margin: 20px;
+    background-color: #FBB540; 
+    color: #FFFFFF;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 800px) {
+    .bannerBlogSection {
+		padding: 60px 20px;
+	}
+    .post-blog {
+        max-width: 80%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #E4EDFF;
+    }
+    .post-content {
+        display: block;
+        margin: 2px;
+    }
+    .postagem-blog {
+        display: none;
+    }
+    .post-imagem {
+        width: 200px;
+    }
+}
+
+

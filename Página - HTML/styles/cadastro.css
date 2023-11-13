@@ -9,16 +9,57 @@
 	font-size: 16px;
 }
 
-header {
-	justify-content: center;
+/* ------------------------- HEADER PÁGINA CADASTRO ------------------------------ */
+
+#header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+	background-color: #e4edff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
 }
 
-.botaoNavbarCadastro {
+.containerLogoTitulo {
+	display: flex;
+	align-items: center;
+	margin-left: 85px;
+}
+
+#header h2 {
+	font-family: "Leckerli One", cursive;
+	margin-left: 15px;
+	font-size: 32px;
+	color: #0292c9;
+}
+
+.logoSite {
+	width: 112px;
+}
+
+#menu {
+	display: flex;
+	list-style: none;
+	margin-right: 85px;
+}
+
+.botaoNavbarRetornar {
+	background-color: #0292c9;
+	color: #ffffff !important;
+	padding: 12px;
+	border-radius: 5px;
+	margin-left: 50px;
+	text-decoration: none;
 	font-weight: bold;
-	margin: 15px;
-	position: absolute;
-  	left: 10px; 
-  	top: 10px; 
+}
+
+.botaoNavbarRetornar:hover {
+	color: #ffffff;
+	background-color: #34aede;
 }
 
 /* --------------------------------------------------------------------- */
@@ -26,6 +67,8 @@ header {
 main {
 	margin: auto;
 	margin-top: 120px;
+	width: 80%;
+	
 }
 
 .box-principal {
@@ -89,10 +132,6 @@ input[type="radio"], input[type="checkbox"]{
 	display: none;
 }
 
-label {
-	cursor: pointer;
-}
-
 input[type="radio"] + label:before, input[type="checkbox"] + label:before {
 	border: 1px solid #CED4DA;
 	background-color: #fff;
@@ -115,11 +154,8 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
 }
 
 .linha-um p {
-	font-size: 16px;
 	display: inline-block;
-	justify-content: space-between;
 	margin: 10px;
-	vertical-align: top;
 }
 
 .linha-um label {
@@ -134,9 +170,13 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
 	height: 36px;
 }
 
-.linha-um #icomplemento,  #icidade, #idia {
+#icpf {
+	width: 405px;
+}
+
+.linha-um #icomplemento, #icidade, #idia {
 	border: 1px solid #CED4DA;
-	width: 350px;
+	width: 250px;
 	height: 36px;
 }
 
@@ -161,16 +201,6 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
 	height: 36px;
 }
 
-.container {
-	display: flex;
-    justify-content: space-between;
-	height: auto;
-}
-
-.box {
-	flex: 2; 
-}
-
 .box-imagem {
 	background-color: white;
     padding: 4px; 
@@ -192,7 +222,7 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
 }
 
 .botao-direita {
-	display: block;
+	display: flex;
 	margin: 10px auto;
 	padding: 8px;
 	border: none;
@@ -210,86 +240,124 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
     display: block;
     margin: 0 auto;
 }
+
+/* ------------------------- FOOTER PÁGINA CADASTRO ------------------------------ */
+
+.containerPatinhas {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 200px 0 200px;
+	position: relative;
+	top: 10px;
+}
+
+.patinhaDogEsquerda {
+	position: relative;
+	top: -30px;
+	margin-right: 20px;
+}
+
+.patinhaCatDireita {
+	position: relative;
+	top: -30px;
+	margin-left: 20px;
+}
+
+.containerCatDogLinks {
+	background-color: #0292c9;
+	color: #e4edff;
+	display: flex;
+	justify-content: center;
+}
+
+.containerFooterInfos {
+	padding: 30px 0 20px 0;
+	text-align: center;
+}
+
+.dogImageFooter, .catImageFooter {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.containerPatinhas { 
+		display: none !important;
+	}
+	
+	.containerCatDogLinks {
+		margin-top: 35px;
+	}
+}
+
+
 /* --------------------------------------------------------------------- */
+@media screen and (max-width: 426px) {
+	#header {
+		height: 130px;
+	}
 
-footer {
+	.containerLogoTitulo {
+		margin: auto;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#header h2 {
+		font-family: "Leckerli One", cursive;
+		margin-left: 10px;
+		font-size: 28px;
+		color: #0292c9;
+	}
+
+	.logoSite {
+		scale: 0.7;
+	}
+
+	main {
+		margin-top: 150px !important;
+	}
 }
 
+@media screen and (min-width: 200px) and (max-width: 600px) { /*celular*/
 
-@media screen and (max-width: 992px) {
- 
-}
-@media screen and (min-width: 768px) {
+	#menu {
+		margin-right: 30px;
+	}
+
+	.containerLogoTitulo {
+		margin-left: 25px;
+	}
 	
 	main {
-	    display: flex; 
-		flex-direction: column-reverse;
-    	align-items: center; 
-    	margin-top: 120px;
-	}
-	
-	.container {
-		display: inline-block;
-		width: 1300px;
-	}
-	
-	.box-principal {
-		padding: 5px;
-		margin: 15px;
-		width: 1300px;
-		justify-content: center;
-	}
-	
-	.box-com-borda-pontilhada {
-		padding: 10px;
-		margin: 15px;
-		width: 1200px;
-		justify-content: center;
-		align-items: center; 
-	}
-
-	
-}
-@media screen and (min-width: 480px) {
-	
-	.container {
-		display: inline-block;
-		justify-content: center;
-		height: auto;
-	}
-	
-	.box {
-		flex: 2; 
-	}
-
-	.linha-um, .linha-dois {
-		margin-left: 2px;
+		width: 100%;
 	}
 
 	.linha-um input[type="text"], input[type="number"], input[type="password"], input[type="date"] {
 		width: 250px;
-		height: 36px;
+		height: 30px;
 	}
 
 	.box-principal {
-		padding: 2px;
-		margin: 2px;
+		margin: 4px;
+		width: 420px;
+		padding: 1px;
 	}
 	
 	.box-com-borda-pontilhada {
-		padding: 5px;
-		margin: 20px;
+		display: block;
+		padding: 10px;
+		margin: 10px;
 	}
 
 	.linha-um p {
-		font-size: 8px;
+		font-size: 2px;
 		display: block;
 	}
 
 	.linha-um #icomplemento,  #icidade, #idia {
 		border: 1px solid #CED4DA;
 		width: 250px;
-		height: 36px;
+		height: 30px;
 	}
 	
 	.linha-um  #iest {
@@ -298,9 +366,7 @@ footer {
 
 	.linha-dois input[type="text"], input[type="number"] {
 		width: 250px;
+		height: 30px;
 	}
-	
-}
-@media screen and (orientation: landscape) {
-    
+		
 }
