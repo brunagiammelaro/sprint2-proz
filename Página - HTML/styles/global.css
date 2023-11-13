@@ -154,8 +154,6 @@ footer p {
 	border-top: 1px solid #aba9a9;
 }
 
-
-
 /* RESPONSIVIDADE DO SITE */
 
 @media screen and (min-width: 769px) and (max-width: 1230px) {
@@ -163,12 +161,27 @@ footer p {
 		display: flex;
 		flex-direction: column;
 		height: 150px;
+		align-self: center;
+
+		align-items: center;
 	}
 	.containerLogoTitulo {
 		margin-top: 15px;
 	}
 	#nav {
 		margin-bottom: 20px;
+	}
+
+	#menu {
+		margin: 0px;
+	}
+
+	.botaoNavbarHome {
+		margin: 0px !important;
+	}
+
+	#menu a {
+		margin-left: 40px;
 	}
 
 	.dogImageFooter,
@@ -181,6 +194,10 @@ footer p {
 
 	.containerPatinhas {
 		margin: 50px 50px 0 50px;
+	}
+
+	main {
+		margin-top: 150px !important;
 	}
 }
 
@@ -323,5 +340,48 @@ footer p {
 @media screen and (max-width: 500px) {
 	.containerPatinhas {
 		display: none;
+	}
+
+	.containerLogoTitulo {
+		margin-left: 0px;
+	}
+
+	#header h2 {
+		font-size: 28px;
+		margin-left: 10px;
+	}
+
+	.logoSite {
+		/* scale: 0.7; */
+		width: 80px;
+		height: auto;
+		margin-left: 12px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#header {
+		height: 120px;
+	}
+
+	.containerLogoTitulo {
+		margin: auto;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#header h2 {
+		font-family: "Leckerli One", cursive;
+		margin-left: 10px;
+		font-size: 28px;
+		color: #0292c9;
+	}
+
+	.logoSite {
+		scale: 0.7;
+	}
+
+	main {
+		margin-top: 120px !important;
 	}
 }
