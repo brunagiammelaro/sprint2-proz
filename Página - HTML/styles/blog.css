@@ -33,10 +33,12 @@
     background-color: #E4EDFF;
 }
 
-.post-image {
+.post-imagem {
     margin-right: 20px;
-    width: 100px; 
+    max-width: 400px; 
+    padding: 20px;
     height: auto;
+    object-fit: cover; 
 }
 
 .post-content {
@@ -63,3 +65,29 @@ h2 {
     color: #948f8f;
     margin: 15px;
 }
+
+@media (max-width: 800px) {
+    .bannerBlogSection {
+		padding: 60px 20px;
+	}
+    .post-blog {
+        max-width: 80%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #E4EDFF;
+    }
+    .post-content {
+        display: block;
+        margin: 2px;
+    }
+    .postagem-blog {
+        display: none;
+    }
+    .post-imagem {
+        width: 200px;
+    }
+}
+
+
