@@ -1,8 +1,10 @@
+/* General Styles */
+
 .botaoNavbarAdote {
-	color: #0292c9;
+    color: #0292c9;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -18,12 +20,12 @@ section {
     background-color: #0292c9;
     color: white;
     padding: 1.5%;
-    height: 100%; /* Preencher a largura total da página */
+    height: 100%;
     text-align: center;
-    margin: 0; /* Certifique-se de não haver margens indesejadas que afetem o posicionamento */
+    margin: 0;
 }
 
-.filtro{
+.filtro {
     display: block;
     flex-direction: column;
     border: 1px dashed;
@@ -34,8 +36,7 @@ section {
     text-align: left;
 }
 
-
-.perfis{
+.perfis {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +46,8 @@ section {
     padding: 30px 10px;
 }
 
-.perfis > div{
+.perfis > div {
+    margin-bottom: 20px;
     background-color: #CFEFFC;
     border-radius: 20px;
     padding: 15px 30px;
@@ -80,7 +82,6 @@ section {
 	word-wrap: break-word;
 }
 
-
 .perfis button:hover{
     transition: 0.5s;
 	background: white;
@@ -88,15 +89,45 @@ section {
 }
 
 .perfis img {
-    max-width: 100%;
-    height: auto;
+    width: 200px;
 	border-radius: 10px;
 }
 
-.perfis img {
-    max-width: 100%;
-    height: auto;
-	border-radius: 10px;
+.input-icon {
+    background-position: calc(100% - 10px);
+    width: 153px;
+}
+
+
+@media (min-width: 769px) and (max-width: 1230px) {
+    main {
+        margin-top: 150px !important;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .perfis > div {
+        width: calc(50% - 20px);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    section {
+        flex-direction: column;
+    }
+
+    .filtro {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+
+    .perfis > div {
+        width: calc(100% - 20px);
+    }
 }
 
 /*
@@ -130,16 +161,3 @@ section {
 }
 
 */
-
-.input-icon{
-    background-image: url(../Assets/Images/adoteImages/Search_Icon.svg);
-    background-repeat: no-repeat;
-    background-position: calc(100% - 10px);
-    width: 153px;
-}
-
-@media (min-width:769px) and ( max-width: 1230px) {
-	main {
-		margin-top: 150px !important;
-	}
-}
