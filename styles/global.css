@@ -154,6 +154,21 @@ footer p {
 	border-top: 1px solid #aba9a9;
 }
 
+.copyrightParagrfo a {
+	text-decoration: none;
+	color: #e4edff;
+	font-weight: bold;
+}
+
+.copyrightParagrfo a:hover {
+	color: #fab440;
+	font-weight: bold;
+}
+
+.copyrightParagrfo abbr {
+	text-decoration: none;
+}
+
 /* RESPONSIVIDADE DO SITE */
 
 @media screen and (min-width: 769px) and (max-width: 1230px) {
