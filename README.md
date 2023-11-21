@@ -61,8 +61,8 @@ Fornecimento de recursos educativos, aconselhamento e dicas relacionadas à adap
 
 ## Layout da Aplicação :dash:
 
-![Página Index](https://raw.githubusercontent.com/brunagiammelaro/sprint2-proz/main/P%C3%A1gina%20-%20HTML/Assets/Images/readme/index.png)
-![Página Adote](https://raw.githubusercontent.com/brunagiammelaro/sprint2-proz/main/P%C3%A1gina%20-%20HTML/Assets/Images/readme/adote.png)
+![Página Index](https://raw.githubusercontent.com/brunagiammelaro/sprint2-proz/main/Assets/Images/readme/index.png)
+![Página Adote](https://raw.githubusercontent.com/brunagiammelaro/sprint2-proz/main/Assets/Images/readme/adote.png)
 
 
 ## Acesso ao Projeto :arrow_forward:
