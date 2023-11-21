@@ -6,8 +6,9 @@
     <title>Cadastro</title>
     <script src="Arquivos - Js/layoutMobileScript.js" defer></script>
     <link rel="icon" href="Assets/Images/favicon.png"/>
-    <!-- <link rel="stylesheet" href="styles/global.css"> -->
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/cadastro.css"/>
+    <script src="Arquivos - Js/cadastro.js" defer></script>
 </head>
 <body>
     <header id="header">
@@ -29,43 +30,44 @@
     </header>
 
     <main>
-        <fieldset class="box-principal">
-        <form action="" method="get" autocomplete="on"></form>
+        <fieldset class="box-principal-pagina">
         <h2 id="titulo">Cadastro</h2>
-        <section>
-             <fieldset class="box-com-borda-pontilhada">
-                    <h3 class="titulo-interno">INFORMAÇÕES DE CADASTRO</h3>
-                <div class="desejo-adotar">
+        <fieldset class="box-com-borda-pontilhada" id="box-principal">
+        <form action="" method="post" autocomplete="on"><h3 class="titulo-interno">INFORMAÇÕES DE CADASTRO</h3>
+            <div class="desejo-adotar">
                         <p id="titulo-marcacao">Desejo:</p>
-                        <p><input type="radio" name="opcao" id="iadotar" class="caixa-marcacao"><label for="iadotar">Adotar</label></p>
-                        <p><input type="radio" name="opcao" id="idoar" class="caixa-marcacao"><label for="idoar">Doar</label></p>
+                        <input type="radio" name="opcao" id="iadotar" class="caixa-marcacao">
+                        <label for="iadotar">Adotar</label>
+
+                        <input type="radio" name="opcao" id="idoar" class="caixa-marcacao">
+                        <label for="idoar">Doar</label>
+            </div>
+            <div class="linha">
+                <div class="grupo">
+                        <label for="nome">*Nome Completo</label>
+                        <input type="text" name="nome" id="nome" minlength="5" maxlength="20">
                 </div>
-                <div class="linha-um">
-                    <p>
-                        <label for="inome">*Nome Completo</label>
-                        <input type="text" name="nome" id="inome" minlength="5" maxlength="20">
-                    </p>
-                    <p>
-                        <label for="icpf">*CPF</label>
-                        <input type="text" name="cpf" id="icpf" placeholder="000.000.000-00" maxlength="14" pattern="[0-9]*" inputmode="numeric">
-                    </p>
-                    <p>
-                        <label for="idia">*Data de nascimento</label>
-                        <input type="date" name="dia" id="idia" value="2023-01-01">
-                    </p>
+                <div class="grupo">  
+                        <label for="cpf">*CPF</label>
+                        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" maxlength="14">
                 </div>
-                <div class="linha-um">
-                    <p>
-                        <label for="iend">Endereço</label>
-                        <input type="text" name="end" id="iend" autocomplete="end" required>
-                    </p>
-                    <p>
-                        <label for="icomplemento">Complemento</label>
-                        <input type="text" name="complemento" id="icomplemento" autocomplete="complemento" required>
-                    </p>
-                    <p>
-                        <label for="iest">*UF</label>
-                        <select name="estado" id="iest">
+                <div class="grupo">
+                        <label for="dia">*Data de nascimento</label>
+                        <input type="date" name="dia" id="dia" value="2023-01-01">
+                </div>
+            </div>
+            <div class="linha">
+                <div class="grupo">
+                        <label for="end">Endereço</label>
+                        <input type="text" name="end" id="end" required>
+                </div>    
+                <div class="grupo">    
+                        <label for="complemento">Complemento</label>
+                        <input type="text" name="complemento" id="complemento" required>
+                </div>
+                <div class="grupo">
+                        <label for="estado">*UF</label>
+                        <select name="estado" id="estado">
                             <option value="AL">AL</option>
                             <option value="AP">AM</option>
                             <option value="AM">AM</option>
@@ -92,122 +94,113 @@
                             <option value="SE">SE</option>
                             <option value="TO">TO</option>
                         </select>
-                    </p>
-                    <p>
-                        <label for="icidade">*Cidade</label>
-                        <input type="text" name="cidade" id="icidade" autocomplete="cidade" required>
-                    </p>
                 </div>
-                <div class="linha-um">
-                    <p>
-                        <label for="iemail">*E-mail</label>
-                        <input type="text" name="email" id="iemail" autocomplete="email" required>
-                    </p>
-                    <p>
-                        <label for="itel">*Telefone</label>
-                        <input type="number" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
-                    </p>
+            </div>
+            <div class="linha">     
+                <div class="grupo">   
+                        <label for="cidade">*Cidade</label>
+                        <input type="text" name="cidade" id="cidade" required>
                 </div>
-                <div class="linha-um">
-                    <p>
-                        <label for="isenha">*Senha</label>
-                        <input type="password" name="senha" id="isenha" autocomplete="senha" required>
-                    </p>
-                    <p>
-                        <label for="isenha">*Confirmar Senha</label>
-                        <input type="password" name="senha" id="isenha" autocomplete="senha" required>
-                    </p>
+                <div class="grupo">              
+                        <label for="email">*E-mail</label>
+                        <input type="text" name="email" id="email" required>
                 </div>
-                </br>
-                    <div class="botao">
-                        <input type="submit" value="Salvar Informações" class="botao-direita">
-                    </div>
-                </fieldset>
-        </section>
+                <div class="grupo">
+                        <label for="telefone">*Telefone</label>
+                        <input type="number" name="telefone" id="telefone" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
+                </div>
+            </div>
+            <div class="linha">
+                <div class="grupo">
+                        <label for="senha">*Senha</label>
+                        <input type="password" name="senha" id="senha" autocomplete="senha" required>
+                </div>
+                <div class="grupo">
+                        <label for="senha">*Confirmar Senha</label>
+                        <input type="password" name="senha" id="senha" autocomplete="senha" required>
+                </div>
+            </div>
+        </form>               
+        </fieldset>
         
-        <section class="box">
-            <fieldset class="box-com-borda-pontilhada">
-                <h3 class="titulo-interno">DOAR - INFORMAÇÕES DO PET</h3>
-            <div class="linha-dois">
-                <p>
-                    <label for="inomepet">*Nome do Pet</label>
-                    <input type="text" name="nome" id="inomepet" autocomplete="nome" required>
+        <fieldset class="box-com-borda-pontilhada" id="campo-doar">
+        <form action="" method="post"><h3 class="titulo-interno">DOAR - INFORMAÇÕES DO PET</h3>
+            <div class="linha-caixa">
+                
+                <label for="nomepet">*Nome do Pet</label>
+                <input type="text" name="nome" id="nomepet" required>
+            
+                <p>Porte:
+                <input type="radio" name="tamanho" id="pequeno" class="caixa-marcacao"><label for="pequeno">Pequeno</label>
+                <input type="radio" name="tamanho" id="medio" class="caixa-marcacao"><label for="medio">Médio</label>
+                <input type="radio" name="tamanho" id="grande" class="caixa-marcacao"><label for="grande">Grande</label>
                 </p>
-                <p>Porte:</p>
-                <input type="radio" name="tamanho" id="ipequeno" class="caixa-marcacao"><label for="ipequeno">Pequeno</label>
-                <input type="radio" name="tamanho" id="imedio" class="caixa-marcacao"><label for="imedio">Médio</label>
-                <input type="radio" name="tamanho" id="igrande" class="caixa-marcacao"><label for="igrande">Grande</label>
-                <p>
-                    <label for="iidade">*Idade</label>
-                    <input type="text" name="idadepet" id="iidade" autocomplete="idadepet" required>
+            
+                <label for="dade">*Idade</label>
+                <input type="text" name="dadepet" id="idadepet" required>
+               
+                <p>Espécie:
+                <input type="radio" name="especie" id="canino" class="caixa-marcacao"><label for="canino">Canino</label>
+                <input type="radio" name="especie" id="felino" class="caixa-marcacao"><label for="felino">Felino</label>
                 </p>
-                <p>Espécie:</p>
-                <input type="radio" name="especie" id="icanino" class="caixa-marcacao"><label for="icanino">Canino</label>
-                <input type="radio" name="especie" id="ifelino" class="caixa-marcacao"><label for="ifelino">Felino</label>
-                <p>
-                    <label for="ipelo">Pelagem</label>
-                    <input type="text" name="pelo" id="ipelo" autocomplete="ipelo" required>
-                </p>
-                <p>
-                    <label for="ipeso">*Peso</label>
-                    <input type="number" name="peso" id="ipeso" autocomplete="peso" required>
-                </p>
+            
+                <label for="pelo">Pelagem</label>
+                <input type="text" name="pelo" id="pelo" required>
+               
+                <label for="peso">*Peso</label>
+                <input type="number" name="peso" id="peso" required>
+            
                 <p>*Carregue uma foto do Pet</p>
                     <div class="box-imagem">
-                        <label for="ifoto" class="botao-foto-pet">Imagem</label>
-                        <input type="file" name="foto" id="ifoto" style="display: none;">
+                        <label for="foto" class="botao-foto-pet">Imagem</label>
+                        <input type="file" name="foto" id="foto" style="display: none;">
+                        <span id="nome-arquivo"></span>
                     </div>
-                    </br>
-                    <div class="botao">
-                        <input type="submit" value="Salvar Informações" class="botao-direita">
-                    </div>
-            </div>
-            </fieldset>
-        </section>
+            </div>       
+         
+        </form>  
+        </fieldset>
         
-        <section class="box">
-            <fieldset class="box-com-borda-pontilhada">
-                <h3 class="titulo-interno">ADOÇÃO - INFORMAÇÕES DO TUTOR</h3>
-            <div class="linha-dois">
+        <fieldset class="box-com-borda-pontilhada" id="campo-adotar">
+        <form action="" method="post"><h3 class="titulo-interno">ADOÇÃO - INFORMAÇÕES DO TUTOR</h3>
+            <div class="linha-caixa">
                 <p id="titulo-marcacao">Você possui outros animais em casa?</p>
-                <input type="radio" name="opcao" id="inao" class="caixa-marcacao"><label for="inao">Não</label>
-                <input type="radio" name="opcao" id="isim" class="caixa-marcacao"><label for="isim">Sim</label>
+                    <input type="radio" name="opcao" id="inao"><label for="inao">Não</label>
+                    <input type="radio" name="opcao" id="isim"><label for="isim">Sim</label>
                 
                 <p>Animais dão gastos com alimentação, higiene e veterinário. Você está ciente?</p>
-                    <input type="radio" name="vet" id="ino" ><label for="ino">Não</label>
-                    <input type="radio" name="vet" id="iyes" ><label for="iyes">Sim</label>
+                    <input type="radio" name="ciente" id="ciente-nao" ><label for="ciente-nao">Não</label>
+                    <input type="radio" name="ciente" id="ciente-sim" ><label for="ciente-sim">Sim</label>
                 
                 <p>Sua residencia oferece segurança para o animal?</p>
-                    <input type="radio" name="seguranca" id="isegsim" ><label for="isegsim">Não</label>
-                    <input type="radio" name="seguranca" id="isegnao" ><label for="isegnao">Sim</label>
+                    <input type="radio" name="seguranca" id="seg-nao" ><label for="seg-nao">Não</label>
+                    <input type="radio" name="seguranca" id="seg-sim" ><label for="seg-sim">Sim</label>
                 
                 <p>Quais características você procura?</p>
                 <p>Espécie</p>
-                    <input type="radio" name="especie" id="icaninos" ><label for="icaninos">Canino</label>
-                    <input type="radio" name="especie" id="ifelinos" ><label for="ifelinos">Felino</label>
+                    <input type="radio" name="especie" id="caninos"><label for="caninos">Canino</label>
+                    <input type="radio" name="especie" id="felinos"><label for="felinos">Felino</label>
                 <p>Porte:</p>
-                    <input type="radio" name="tamanho" id="ipequenos" ><label for="ipequenos">Pequeno</label>
-                    <input type="radio" name="tamanho" id="imedios" ><label for="imedios">Médio</label>
-                    <input type="radio" name="tamanho" id="igrandes" ><label for="igrandes">Grande</label>
-                
-                <div class="botao">
-                    <input type="submit" value="Salvar Informações" class="botao-direita">
-                </div>
-
+                    <input type="radio" name="tamanho" id="pequenos"><label for="pequenos">Pequeno</label>
+                    <input type="radio" name="tamanho" id="medios"><label for="medios">Médio</label>
+                    <input type="radio" name="tamanho" id="grandes"><label for="grandes">Grande</label>
+              
             </div>
-            </fieldset>
-        </section>
-        
-        <section>
-            <fieldset class="box-com-borda-pontilhada">
-                <input type="checkbox" name="esbas" id="iesbas" class="caixa-marcacao"><label for="iesbas">Declaro que li e concordo com os Termos de Uso e Política de Privacidade, incluindo o nosso uso de Cookies.</label>
-            </fieldset>
-        </section>
-        <div>
-            <input type="submit" value="Criar Cadastro"class="botao-cadastro">
-        </div>
         </form>
         </fieldset>
+
+        <fieldset class="box-com-borda-pontilhada">
+            <form action="">
+                <input type="checkbox" name="termos" id="termos">
+                <label for="termos">Declaro que li e concordo com os Termos de Uso e Política de Privacidade, incluindo o nosso uso de Cookies.</label>
+            </form>
+        </fieldset>
+
+        <button id="botao">Cadastrar</button>
+
+        
+        </fieldset>
+        
     </main>
     <footer>
         <div class="containerPatinhas">
