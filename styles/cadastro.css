@@ -270,22 +270,6 @@ input::placeholder{
 	display: none;
 }
 
-.copyrightParagrfo a {
-	text-decoration: none;
-	color: #e4edff;
-	font-weight: bold;
-}
-
-.copyrightParagrfo a:hover {
-	color: #fab440;
-	font-weight: bold;
-}
-
-.copyrightParagrfo abbr {
-	text-decoration: none;
-}
-
-
 @media screen and (max-width: 768px) {
 	.containerPatinhas { 
 		display: none !important;
