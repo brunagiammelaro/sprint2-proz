@@ -210,11 +210,11 @@ input::placeholder{
 	background-color: #FBB540; 
     color: white; 
     border-radius: 5px;
-    font-size: 14px; 
+    font-size: 17px; 
     cursor: pointer; 
-	padding: 7px 4px;
+	padding: 2px 3px;
+	text-align: center;
 	margin-bottom: auto;
-	vertical-align: middle;
 	width: 100px;
 }
 
