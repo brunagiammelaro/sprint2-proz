@@ -46,10 +46,12 @@
                 <div class="grupo">
                         <label for="nome">*Nome Completo</label>
                         <input type="text" name="nome" id="nome" minlength="5" maxlength="20">
+                        <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div class="grupo">  
                         <label for="cpf">*CPF</label>
                         <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" maxlength="14">
+                       <p id="cpf-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div class="grupo">
                         <label for="dia">*Data de nascimento</label>
@@ -104,6 +106,7 @@
                 <div class="grupo">              
                         <label for="email">*E-mail</label>
                         <input type="text" name="email" id="email" required>
+                        <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div class="grupo">
                         <label for="telefone">*Telefone</label>
@@ -114,10 +117,12 @@
                 <div class="grupo">
                         <label for="senha">*Senha</label>
                         <input type="password" name="senha" id="senha" autocomplete="senha" required>
+                        <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div class="grupo">
                         <label for="senha">*Confirmar Senha</label>
                         <input type="password" name="senha" id="senha" autocomplete="senha" required>
+                        <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
             </div>
         </form>               
@@ -197,6 +202,13 @@
         </fieldset>
 
         <button id="botao">Cadastrar</button>
+        <div id="popupCadastro" class="popup">
+            <div class="popup-content">
+                <p>Cadastro finalizado com sucesso!</p>
+                <button onclick="fecharPopup()"> <a href="index.html">Fechar</a></button>
+            </div>
+        </div>
+        
 
         
         </fieldset>
