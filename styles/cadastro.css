@@ -5,6 +5,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 	font-family: "Inter", sans-serif;
 	font-size: 16px;
 }
@@ -65,38 +66,40 @@
 /* --------------------------------------------------------------------- */
 
 main {
+	width: 80%;
 	margin: auto;
 	margin-top: 120px;
-	width: 80%;
-	
+	font-family: "Inter", sans-serif;
 }
 
-.box-principal {
+.box-principal-pagina {
 	border: 2px dashed #D1D1D1;
- 	padding: 10px;
-	background-color: #E4EDFF41;
-	margin: 20px;
+	background-color: white;
 	border-radius: 15px;
+	padding: 20px;
+	align-items: center;
 }
 
 .box-com-borda-pontilhada {
 	border: 2px dashed #D1D1D1;
- 	padding: 20px;
-	margin: 20px;
-	background-color: #E4EDFF53;
-	border-radius: 5px;
+ 	padding: 10px;
+	background-color: #E4EDFF41;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+
+#campo-doar, #campo-adotar {
+	display: none;
 }
 
 #titulo {
-	font-family: "Inter", sans-serif;
 	font-size: 32px;
 	color: #0292c9;
-	padding: 20px;
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .titulo-interno {
-	font-family: "Inter", sans-serif;
 	font-size: 20px;
 	color: #0292c9;
 	padding: 20px;
@@ -110,7 +113,6 @@ main {
 .desejo-adotar p {
 	display: inline-block;
 	justify-content: center;
-	padding: 0px;
 	border-radius: 5px;
 	text-align: center;
 }
@@ -125,9 +127,8 @@ main {
 	font-size: 18px;
 }
 
-input[type="radio"], input[type="checkbox"]{
+input[type="radio"], input[type="checkbox"] {
 	vertical-align: middle; 
-    margin: 2px;
 	margin-left: 20px;
 	display: none;
 }
@@ -153,94 +154,134 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
     text-align: center;
 }
 
-.linha-um p {
-	display: inline-block;
-	margin: 10px;
+.linha {
+	display: flex;  
+	margin-top: 10px;
+	justify-content: left;
 }
 
-.linha-um label {
-	display: block;
-	margin-bottom: 5px; 
+.linha label{
+	display: block;    
+	margin-top: 5px;
 }
 
-.linha-um input[type="text"], input[type="number"], input[type="password"], input[type="date"] {
+.linha-caixa {
+	display: inline-block;  
+	margin-top: 10px;
+}
+
+.linha-caixa label{
+	display: block;    
+	margin-top: 5px;
+}
+
+.grupo {
+    margin: 0px 20px;
+}
+
+#nome, #end, #email, #senha, #complemento, #nomepet, #idadepet, #peso, #pelo, #cpf, #telefone, #dia, #cidade, #estado {
+	width: 300px;
 	border: 1px solid #CED4DA;
     border-radius: 5px; 
-	width: 500px;
 	height: 36px;
+	margin-bottom: 10px;
 }
 
-#icpf {
-	width: 405px;
+input {
+	text-align: center;
 }
 
-.linha-um #icomplemento, #icidade, #idia {
-	border: 1px solid #CED4DA;
-	width: 250px;
-	height: 36px;
-}
-
-.linha-um  #iest {
-	border: 1px solid #CED4DA;
-	width: 130px;
-	height: 30px;
-}
-
-.linha-dois p {
-	margin: 10px;
-	padding-top: 15px;
-	margin-bottom: 15px;
-}
-
-.linha-dois input[type="text"], input[type="number"] {
-	display: block;
-	margin-bottom: 5px; 
-	border: 1px solid #CED4DA;
-    border-radius: 5px; 
-	width: 200px;
-	height: 36px;
+input::placeholder{
+	text-align: center;
 }
 
 .box-imagem {
 	background-color: white;
-    padding: 4px; 
+    padding: 1px; 
     border: 1px solid #CED4DA;
 	border-radius: 5px; 
-    display: flex; 
-    justify-content: right;
+    display: inline-block; 
+    justify-content: left;
     width: 300px;
-    height: 28px;
+    height: 36px;
 }
 
 .botao-foto-pet {
 	background-color: #FBB540; 
     color: white; 
-    padding: 5px 10px; 
     border-radius: 5px;
-    font-size: 14px; 
+    font-size: 17px; 
     cursor: pointer; 
+	padding: 2px 3px;
+	text-align: center;
+	margin-bottom: auto;
+	width: 100px;
 }
 
-.botao-direita {
-	display: flex;
-	margin: 10px auto;
-	padding: 8px;
-	border: none;
-	cursor: pointer;
-	background-color: #5D636A; 
-    color: white; 
-}
-
-.botao-cadastro {
-	padding: 12px;
+#botao {
+	padding: 15px;
 	border: none;
 	cursor: pointer;
 	background-color: #0292C9; 
     color: white; 
+    margin: 10px;
+	width: 200px;
+	margin: 10px auto;
     display: block;
-    margin: 0 auto;
+	border-radius: 4px;
+}
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+  }
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+  }
+
+input.error {
+    border: solid 2px #992020;
+    background-color: #ec8d8d;
+    color: #080808;
+  }
+  
+input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+.visible {
+    display: block;
+  }
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
 }
 
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
 /* ------------------------- FOOTER PÁGINA CADASTRO ------------------------------ */
 
 .containerPatinhas {
@@ -278,22 +319,6 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
 .dogImageFooter, .catImageFooter {
 	display: none;
 }
-
-.copyrightParagrfo a {
-	text-decoration: none;
-	color: #e4edff;
-	font-weight: bold;
-}
-
-.copyrightParagrfo a:hover {
-	color: #fab440;
-	font-weight: bold;
-}
-
-.copyrightParagrfo abbr {
-	text-decoration: none;
-}
-
 
 @media screen and (max-width: 768px) {
 	.containerPatinhas { 
@@ -346,43 +371,35 @@ input[type="radio"]:checked + label:before, input[type="checkbox"]:checked + lab
 	
 	main {
 		width: 100%;
+		margin-top: 150px !important;
+		margin: 0;
 	}
 
-	.linha-um input[type="text"], input[type="number"], input[type="password"], input[type="date"] {
-		width: 250px;
-		height: 30px;
+	.linha {
+		display: inline-block;  
 	}
 
-	.box-principal {
-		margin: 4px;
-		width: 420px;
-		padding: 1px;
-	}
-	
-	.box-com-borda-pontilhada {
-		display: block;
-		padding: 10px;
-		margin: 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) { /*tablet*/
+	main {
+		width: 100%;
+		margin-top: 110px !important;
+		margin: 0;
 	}
 
-	.linha-um p {
-		font-size: 2px;
-		display: block;
+	.linha {
+		display: inline-block;  
 	}
 
-	.linha-um #icomplemento,  #icidade, #idia {
-		border: 1px solid #CED4DA;
-		width: 250px;
-		height: 30px;
-	}
-	
-	.linha-um  #iest {
-		width: 100px;
-	}
+}
 
-	.linha-dois input[type="text"], input[type="number"] {
-		width: 250px;
-		height: 30px;
-	}
+@media screen and (min-width: 769px) { /*notebook*/
+	main {
+		width: 80%;
+		margin: auto;
+		margin-top: 110px !important;
 		
+	}
+
 }
