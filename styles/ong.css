@@ -5,7 +5,8 @@
 .bannerOngsSection {
 	background-color: #0292c9;
 	color: #ffffff;
-	padding: 60px 170px 90px 170px;
+	/* padding: 60px 170px 90px 170px; */
+	padding: 60px 170px 60px 170px;
 }
 
 .bannerOngsSection h1 {
