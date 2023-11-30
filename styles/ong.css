@@ -1,5 +1,5 @@
 #menu .botaoNavbarOng {
-	color: #FBB540;
+	color: #fbb540;
 }
 
 .bannerOngsSection {
@@ -17,6 +17,27 @@
 	font-size: 18px;
 	padding-top: 20px;
 	line-height: 1.5;
+}
+
+.containerPesquisa {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.containerPesquisa label {
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.containerPesquisa select {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
 }
 
 /* --------------------------------------------------------- */
@@ -108,5 +129,9 @@
 	}
 	.containerRedesSociaisBotoes a {
 		filter: grayscale(0);
+	}
+
+	.containerPesquisa {
+		width: 80%;
 	}
 }
