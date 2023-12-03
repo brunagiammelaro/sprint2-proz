@@ -3,6 +3,7 @@
 }
 
 main {
+    margin-top: 80px; 
     display: flex;
     justify-content: center;
     text-align: center;
@@ -18,9 +19,9 @@ section {
     background-color: #0292c9;
     color: white;
     padding: 1.5%;
-    height: 100%;
     text-align: center;
     margin: 0;
+    width: 100%; /* Adicionado para ocupar toda a largura */
 }
 
 .filtro {
@@ -51,6 +52,12 @@ section {
     padding: 15px 30px;
     align-items: center;
     text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.perfis > div:hover {
+    transform: scale(1.05);
 }
 
 .perfis h3{

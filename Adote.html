@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="styles/global.css" />
 		<link rel="stylesheet" href="styles/adote.css" />
 		<script src="Arquivos - Js/layoutMobileScript.js" defer></script>
+		<script src="Arquivos - Js/adote.js" defer></script>
 	</head>
 	<body>
 		<header id="header">
@@ -68,81 +69,91 @@
 		</main>
 		<section>
 			<div class="filtro">
-				<p><b>Filtre suas Preferências</b></p
-				><br />
-				<p><b>Região</b></p>
-				<label
-					><select name="regiao">
-						<option value="" selected>Estado</option>
-						<option value="AL">Alagoas</option>
-						<option value="AP">Amapá</option>
-						<option value="AM">Amazonas</option>
-						<option value="BA">Bahia</option>
-						<option value="CE">Ceará</option>
-						<option value="DF">Distrito Federal</option>
-						<option value="ES">Espírito Santo</option>
-						<option value="GO">Goiás</option>
-						<option value="MA">Maranhão</option>
-						<option value="MT">Mato Grosso</option>
-						<option value="MS">Mato Grosso do Sul</option>
-						<option value="MG">Minas Gerais</option>
-						<option value="PA">Pará</option>
-						<option value="PB">Paraíba</option>
-						<option value="PR">Paraná</option>
-						<option value="PE">Pernambuco</option>
-						<option value="PI">Piauí</option>
-						<option value="RJ">Rio de Janeiro</option>
-						<option value="RN">Rio Grande do Norte</option>
-						<option value="RS">Rio Grande do Sul</option>
-						<option value="RO">Rondônia</option>
-						<option value="RR">Roraima</option>
-						<option value="SC">Santa Catarina</option>
-						<option value="SE">Sergipe</option>
-						<option value="TO">Tocantins</option>
-					</select></label
-				><br />
-				<label
-					><input
-						type="search"
-						placeholder="Cidade..."
-						class="input-icon" /></label
-				><br />
+				<div class="box">
+					<p><b>Filtre suas Preferências</b></p
+					><br />
+					<p><b>Região</b></p>
+					<label
+						><select name="regiao">
+							<option value="" selected>Estado</option>
+							<option value="AL">Alagoas</option>
+							<option value="AP">Amapá</option>
+							<option value="AM">Amazonas</option>
+							<option value="BA">Bahia</option>
+							<option value="CE">Ceará</option>
+							<option value="DF">Distrito Federal</option>
+							<option value="ES">Espírito Santo</option>
+							<option value="GO">Goiás</option>
+							<option value="MA">Maranhão</option>
+							<option value="MT">Mato Grosso</option>
+							<option value="MS">Mato Grosso do Sul</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="PA">Pará</option>
+							<option value="PB">Paraíba</option>
+							<option value="PR">Paraná</option>
+							<option value="PE">Pernambuco</option>
+							<option value="PI">Piauí</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="RN">Rio Grande do Norte</option>
+							<option value="RS">Rio Grande do Sul</option>
+							<option value="RO">Rondônia</option>
+							<option value="RR">Roraima</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="SE">Sergipe</option>
+							<option value="SP">São Paulo</option>
+							<option value="TO">Tocantins</option>
+						</select></label
+					><br />
+				</div>
 
-				<br />
-				<p><b>Pet</b></p>
-				<label for="cachorro"><input type="checkbox" /> Cachorro</label
-				><br />
-				<label for="gato"><input type="checkbox" /> Gato</label><br />
-				<label for="todos"><input type="checkbox" /> Todos</label><br />
+				<div class="box">
+					<label
+						><input
+							type="search"
+							placeholder="Cidade..."
+							class="input-icon" /></label
+					><br />
+				</div>
 
-				<br />
-				<p><b>Idade do Pet:</b></p>
-				<label for="filhote"
-					><input type="checkbox" /> Filhote (até 1 ano)</label
-				><br />
-				<label for="jovem"
-					><input type="checkbox" /> Jovem (de 1 à 3 anos)</label
-				><br />
-				<label for="adulto"
-					><input type="checkbox" /> Adulto (Acima de 3 anos)</label
-				><br />
+				<div class="box">
+					<br />
+					<p><b>Pet</b></p>
+					<label for="cachorro"><input type="checkbox" value="cachorro" class="checkbox" id="cachorro" /> Cachorro</label
+					><br />
+					<label for="gato"><input type="checkbox" value="gato" class="checkbox" id="gato"/> Gato</label><br />
+					<label for="todos"><input type="checkbox" value="todos" class="checkbox" id="todos" /> Todos</label><br />
+				</div>
 
-				<br />
-				<p><b>Porte do Pet:</b></p>
-				<label for="grande"
-					><input type="checkbox" /> Porte Grande</label
-				><br />
-				<label for="medio"><input type="checkbox" /> Porte Médio</label
-				><br />
-				<label for="pequeno"
-					><input type="checkbox" /> Porte Pequeno</label
-				><br />
+				<div class="box">
+					<br />
+					<p><b>Idade do Pet:</b></p>
+					<label for="filhote"
+						><input type="checkbox" value="filhote" class="checkbox" id="filhote"/> Filhote (até 1 ano)</label
+					><br />
+					<label for="jovem"
+						><input type="checkbox" value="jovem" class="checkbox" id="jovem"/> Jovem (de 1 à 3 anos)</label
+					><br />
+					<label for="adulto"
+						><input type="checkbox" value="adulto" class="checkbox" id="adulto"/> Adulto (Acima de 3 anos)</label
+					><br />
+				</div>
 
-				<br />
+				<div class="box">
+					<br />
+					<p><b>Porte do Pet:</b></p>
+					<label for="grande"
+						><input type="checkbox" value="pGrande" class="checkbox" id="pGrande"/> Porte Grande</label
+					><br />
+					<label for="medio"><input type="checkbox" value="pMedio" class="checkbox" id="pMedio"/> Porte Médio</label
+					><br />
+					<label for="pequeno"
+						><input type="checkbox" value="pPequeno" class="checkbox" id="pPequeno"/> Porte Pequeno</label
+					><br />
+					<br />
+				</div>
 			</div>
-
 			<div class="perfis">
-				<div id="zeus">
+				<div id="cachorro pPequeno" data-regiao="SP" data-cidade="São Paulo" data-pet="cachorro" data-idade="jovem" data-porte="pPequeno">
 					<br />
 					<img
 						src="Assets/Images/adoteImages/cao 1.png.png"
@@ -152,7 +163,7 @@
 					<p>Porte Pequeno</p>
 					<button type="submit">Detalhes</button>
 				</div>
-				<div class="micah">
+				<div id="gato pPequeno" data-regiao="PR" data-cidade="Curitiba" data-pet="gato" data-idade="filhote" data-porte="pPequeno">
 					<br />
 					<img
 						src="Assets/Images/adoteImages/gato 1.png"
@@ -162,7 +173,7 @@
 					<p>Porte Pequeno</p>
 					<button type="submit">Detalhes</button>
 				</div>
-				<div class="aurora">
+				<div id="cachorro pGrande" data-regiao="SP" data-cidade="São Paulo" data-pet="cachorro" data-idade="adulto" data-porte="pGrande">
 					<br />
 					<img
 						src="Assets/Images/adoteImages/cao 2.png"
@@ -172,7 +183,7 @@
 					<p>Porte Grande</p>
 					<button type="submit">Detalhes</button>
 				</div>
-				<div class="fefa">
+				<div id="gato pPequeno" data-regiao="PR" data-cidade="Curitiba" data-pet="gato" data-idade="jovem" data-porte="pPequeno">
 					<br />
 					<img
 						src="Assets/Images/adoteImages/gato 2.png"
@@ -182,7 +193,7 @@
 					<p>Porte Pequeno</p>
 					<button type="submit">Detalhes</button>
 				</div>
-				<div class="thor">
+				<div id="cachorro pGrande" data-regiao="SP" data-cidade="São Paulo" data-pet="cachorro" data-idade="adulto" data-porte="pGrande">
 					<br />
 					<img
 						src="Assets/Images/adoteImages/cao 3.png"
@@ -192,7 +203,7 @@
 					<p>Porte Grande</p>
 					<button type="submit">Detalhes</button>
 				</div>
-				<div class="flecha">
+				<div id="gato pPequeno" data-regiao="SP" data-cidade="São Paulo" data-pet="gato" data-idade="adulto" data-porte="pPequeno">
 					<br />
 					<img
 						src="Assets/Images/adoteImages/gato 3.png"
@@ -202,7 +213,7 @@
 					<p>Porte Pequeno</p>
 					<button type="submit">Detalhes</button>
 				</div>
-				<div class="pandora">
+				<div id="cachorro pPequeno" data-regiao="PR" data-cidade="Curitiba" data-pet="cachorro" data-idade="adulto" data-porte="pPequeno">
 					<br />
 					<img
 						src="Assets/Images/adoteImages/cao 4.png"
@@ -212,7 +223,7 @@
 					<p>Porte Pequeno</p>
 					<button type="submit">Detalhes</button>
 				</div>
-				<div class="myah">
+				<div id="gato pMedio" data-regiao="SP" data-cidade="São Paulo" data-pet="gato" data-idade="adulto" data-porte="pMedio">
 					<br />
 					<img
 						src="Assets/Images/adoteImages/gato 4.png"
