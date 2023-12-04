@@ -50,6 +50,23 @@ const arrayOngs = [
 		whatsappLink: "#",
 		twitterLink: "#",
 	},
+	{
+		id: 4,
+		imgLogo: "suipa.png",
+		altImgLogo: "ONG SUIPA",
+		nomeOng: "SUIPA",
+		descricao: "Fundada em 1943, a SUIPA é uma das mais antigas e conhecidas ONGs de proteção animal no Brasil. Ela atua no resgate, cuidado e adoção de animais em situação de abandono e maus-tratos.",
+		cidade: "Rio de Janeiro - RJ",
+		endereco: "Av. Dom Hélder Câmara, 1801 - Benfica",
+		telefone: "(21)3297-8777",
+		email: "--",
+		siteUrl: "https://www.suipa.org.br/",
+		site: "www.suipa.org.br/",
+		instagramLink: "#",
+		facebookLink: "#",
+		whatsappLink: "#",
+		twitterLink: "#",
+	},
 ];
 
 for (let i = 0; i < arrayOngs.length; i++) {
