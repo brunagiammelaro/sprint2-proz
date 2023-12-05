@@ -66,7 +66,7 @@ Fornecimento de recursos educativos, aconselhamento e dicas relacionadas à adap
 
 
 ## Acesso ao Projeto :arrow_forward:
-[PawsOnCloud]([https://](https://brunagiammelaro.github.io/sprint2-proz/))
+<a href="https://brunagiammelaro.github.io/sprint2-proz/">[PawsOnCloud]</a>
 ## Desenvolvedores :octocat:
 
 <a href="https://github.com/brunagiammelaro">
