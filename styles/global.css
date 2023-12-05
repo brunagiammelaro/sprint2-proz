@@ -62,14 +62,14 @@
 	color: #fab440;
 }
 
-.botaoNavbarCadastro {
+.botaoNavbarLogin {
 	background-color: #0292c9;
 	color: #ffffff !important;
 	padding: 12px;
 	border-radius: 5px;
 }
 
-.botaoNavbarCadastro:hover {
+.botaoNavbarLogin:hover {
 	color: #ffffff;
 	background-color: #34aede;
 }

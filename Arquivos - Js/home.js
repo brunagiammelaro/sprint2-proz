@@ -23,3 +23,4 @@ if (categoria === "cachorro") {
         <label for="todos"><input type="checkbox" value="todos" class="checkbox" id="todos" /> Todos</label><br />
     `;
 }
+
