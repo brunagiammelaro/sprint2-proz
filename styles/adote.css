@@ -2,6 +2,7 @@
     color: #FBB540;
 }
 
+
 main {
     margin-top: 80px; 
     display: flex;
@@ -21,7 +22,13 @@ section {
     padding: 1.5%;
     text-align: center;
     margin: 0;
-    width: 100%; /* Adicionado para ocupar toda a largura */
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.banneradote h2 {
+    margin: 0 auto;
+    max-width: 600px; 
 }
 
 .filtro {
@@ -78,6 +85,7 @@ section {
 
 .perfis button {
     color: white;
+    border: white;
 	width: 80px;  
 	background: #FBB540; 
 	border-radius: 5px; 
@@ -85,6 +93,7 @@ section {
 	font-family: Montserrat;
 	font-weight: 400px;
 	word-wrap: break-word;
+    cursor: pointer;
 }
 
 .perfis button:hover{
@@ -97,6 +106,59 @@ section {
     width: 200px;
 	border-radius: 10px;
 }
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    z-index: 3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+#modal.active {
+    display: block;
+}
+
+.conteudo-modal{
+    margin: 0 auto;
+    margin-top: 3%;
+    max-width: 600px;
+    background-color: #CFEFFC;
+    border-radius: 15px;
+}
+
+.cabecalho-modal{
+    padding: 1px 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid white 1px;
+}
+
+.cabecalho-modal h1{
+    color: #FBB540;
+	font-size: 20px;
+	font-family: Lexend Deca;
+	font-weight: 400;
+
+}
+
+.corpo-modal{
+    padding: 1px 8px 8px 8px;
+    color: #0292C9;
+	font-size: 12px;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.rodape-modal{
+    border-top: solid white 1px;
+    padding: 8px;
+}
+
 
 .input-icon{
     background-image: url(../Assets/Images/adoteImages/Search_Icon.svg);
@@ -137,34 +199,3 @@ section {
     }
 }
 
-/*
-.pagina{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-.pagina nav{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.pagina button{
-    color: white;
-	width: 20px;  
-	background: #FBB540; 
-	border-radius: 5px; 
-	font-size: 14px;
-	font-family: Montserrat;
-	font-weight: 400px;
-	word-wrap: break-word;
-}
-
-.pagina a{
-    color: white;
-    text-decoration: none;
-}
-
-*/

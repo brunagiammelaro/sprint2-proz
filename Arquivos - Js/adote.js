@@ -57,3 +57,44 @@ document.addEventListener("DOMContentLoaded", function () {
    
     aplicarFiltros();
 });
+
+
+function abrirModal(element) {
+
+    var modal = element.parentNode.querySelector('.modal');
+
+
+    modal.style.display = 'block';
+}
+
+
+function fecharModal(element) {
+
+    var modal = element.parentNode.parentNode;
+
+
+    modal.style.display = 'none';
+}
+
+
+document.querySelectorAll('.btn-outline-sucess').forEach(function(button) {
+    button.addEventListener('click', function() {
+        abrirModal(this);
+    });
+});
+
+document.querySelectorAll('.modal .btn-outline-sucess').forEach(function(button) {
+    button.addEventListener('click', function() {
+        fecharModal(this);
+    });
+});
+
+window.addEventListener('click', function(event) {
+    var modais = document.querySelectorAll('.modal');
+    modais.forEach(function(modal) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
