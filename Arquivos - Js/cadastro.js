@@ -106,19 +106,30 @@ function mostrarPopUp (input, label) {
         label.classList.remove('required-popup');
     })
 }
-mostrarPopUp(cpfInput, cpfLabel)
-cpfInput.addEventListener('input', (e) => {
-    
-    let valorcpf = e.target.value
 
-    if (valorcpf.length < 14) {
-        cpfInput.classList.add('error')
-        cpfHelper.classList.add('visible')
-        cpfHelper.innerText = 'O CPF é inválido'
+function validarCPF(cpf) {
+    cpf = cpf.replace(/[^\d]+/g, '');
+
+    const cpfsInvalidos = ["00000000000", "11111111111", "22222222222", "33333333333", "44444444444", "55555555555", "66666666666", "77777777777", "88888888888", "99999999999"];
+
+    if (cpf.length !== 11 || cpfsInvalidos.includes(cpf)) {
+        return false;
+    }
+
+    return true;
+}
+
+cpfInput.addEventListener('input', (e) => {
+    let cpf = e.target.value;
+
+    if (!validarCPF(cpf)) {
+        cpfInput.classList.add('error');
+        cpfHelper.classList.add('visible');
+        cpfHelper.innerText = 'CPF inválido';
     } else {
-        cpfInput.classList.remove('error')
-        cpfHelper.classList.remove('visible')
-        cpfInput.classList.add('correct')
+        cpfInput.classList.remove('error');
+        cpfHelper.classList.remove('visible');
+        cpfInput.classList.add('correct');
     }
 })
 
