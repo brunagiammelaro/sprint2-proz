@@ -7,7 +7,9 @@
     <link rel="icon" href="Assets/Images/favicon.png"/>
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/blog.css" />
+    <script src="Arquivos - Js/blog.js" defer></script>
     <script src="Arquivos - Js/layoutMobileScript.js" defer></script>
+    
 </head>
 <body>
     <header id="header">
@@ -42,17 +44,46 @@
             </section>
             
             <section class="post-blog">
-            <div class="post-imagem">
-                <img src="Assets/Images/blog/imagem1.png" alt="imagem de cão" class="post-imagem" >
-                <p class="overlay-rectangle">CÃES</p>
-            </div>
-            <div  class="post-content">
-                <h2><a href="">Adaptação do cão a nova família</a></h2>
-                <p class="postagem-blog">São tantas novidade, nem sempre, é fácil para os bichinhos. Tem o estranhamento com o novo espaço, a ansiedade por separação quando os donos precisam sair e a dificuldade em fazer as necessidades onde deve.</p>
-                <p class="autor">Publicado por Bruna em 03 de outubro de 2023</p>
-            </div>
+                <div class="post-imagem">
+                    <img src="Assets/Images/blog/imagem1.png" alt="imagem de cão" class="post-imagem">
+                    <p class="overlay-rectangle">CÃES</p>
+                </div>
+                <div class="post-content">
+                    <h2>Adaptação do cão a nova família</h2>
+                    <p class="postagem-blog">São tantas novidades, nem sempre, é fácil para os bichinhos. Tem o estranhamento com o novo espaço, a ansiedade por separação quando os donos precisam sair e a dificuldade em fazer as necessidades onde deve.</p>
+                    <p class="autor">Publicado por Bruna em 03 de outubro de 2023</p>
+                    <button class="btn-outline-success" onclick="abrirModal('text-blog')">Leia Mais</button>
+                </div>
             </section>
+        
+            <div id="text-blog" class="modal">
+                <div class="conteudo-modal">
+                    <div class="cabecalho-modal">
+                        <h1 class="titulo-modal">Adaptação do cão a nova família</h1>
+                        <span class="cabecalho-modal-fechar" onclick="fecharModal('text-blog')">X</span>
+                    </div>
 
+                    <div class="corpo-modal">
+                        <p>Seja bem-vindo ao emocionante capítulo da vida em que sua família se expande para incluir um novo membro peludo! Adotar um cão é uma experiência incrivelmente gratificante, mas também traz consigo desafios que podem parecer esmagadores para o novo amigo de quatro patas. Nesta postagem, vamos explorar as nuances da adaptação canina à nova família, abordando questões como estranhamento no novo espaço, ansiedade por separação e a arte de fazer as necessidades no lugar certo.
+
+                        <strong>Estranhamento com o Novo Espaço</strong>
+                        Imagine-se no lugar do seu cãozinho. De repente, tudo é novo: os cheiros, os sons, a disposição dos móveis. É natural que os cães estranhem inicialmente o novo ambiente. Paciência é a palavra-chave. Permita que o seu companheiro explore gradualmente cada canto da casa, sempre supervisionando para garantir a segurança.
+                            
+                        Crie um ambiente acolhedor com a presença de objetos familiares, como brinquedos e a cama antiga do cão, para proporcionar uma sensação de familiaridade. Estabeleça uma rotina consistente para criar previsibilidade, o que ajudará a reduzir o desconforto causado pela novidade.
+                            
+                        <strong>Ansiedade por Separação</strong>
+                        A ligação entre cão e dono é poderosa, e a separação pode gerar ansiedade em muitos cães. Comece com ausências curtas e progressivamente aumente o tempo. Antes de sair, ofereça brinquedos recheados com petiscos para manter o cão ocupado e distraído na sua ausência. Reforçar a ideia de que você sempre volta ajuda a construir confiança.
+                            
+                        Não faça uma despedida dramática. Ao sair e retornar, mantenha a calma para evitar criar ansiedade desnecessária. Considere a possibilidade de um treinamento gradual de separação para acostumar seu cão à ideia de ficar sozinho.
+                         </p>
+                    </div>
+
+                    <div class="rodape-modal">
+                        <button class="btn-outline-success" onclick="fecharModal('text-blog')">Fechar</button>
+                    </div>
+                </div>
+            </div>
+            
             <section class="post-blog">
                 <div class="post-imagem">
                     <img src="Assets/Images/blog/imagem2.png" alt="imagem de cão" class="post-imagem" >
@@ -62,8 +93,38 @@
                 <h2><a href="">Vacinas anuais para gatos?</a></h2>
                 <p class="postagem-blog">Junto com a vacina antirrábica, que combate a raiva felina, saiba quais são as vacinas obrigatórias...</p>
                 <p class="autor">Publicado por Lucas em 02 de outubro de 2023</p>
+                <button class="btn-outline-success" onclick="abrirModal('text-blog')">Leia Mais</button>
             </div>
             </section>
+
+            <div id="text-blog" class="modal">
+                <div class="conteudo-modal">
+                    <div class="cabecalho-modal">
+                        <h1 class="titulo-modal">Adaptação do cão a nova família</h1>
+                        <span class="cabecalho-modal-fechar" onclick="fecharModal('text-blog')">X</span>
+                    </div>
+
+                    <div class="corpo-modal">
+                        <p>Seja bem-vindo ao emocionante capítulo da vida em que sua família se expande para incluir um novo membro peludo! Adotar um cão é uma experiência incrivelmente gratificante, mas também traz consigo desafios que podem parecer esmagadores para o novo amigo de quatro patas. Nesta postagem, vamos explorar as nuances da adaptação canina à nova família, abordando questões como estranhamento no novo espaço, ansiedade por separação e a arte de fazer as necessidades no lugar certo.
+
+                        <strong>Estranhamento com o Novo Espaço</strong>
+                        Imagine-se no lugar do seu cãozinho. De repente, tudo é novo: os cheiros, os sons, a disposição dos móveis. É natural que os cães estranhem inicialmente o novo ambiente. Paciência é a palavra-chave. Permita que o seu companheiro explore gradualmente cada canto da casa, sempre supervisionando para garantir a segurança.
+                            
+                        Crie um ambiente acolhedor com a presença de objetos familiares, como brinquedos e a cama antiga do cão, para proporcionar uma sensação de familiaridade. Estabeleça uma rotina consistente para criar previsibilidade, o que ajudará a reduzir o desconforto causado pela novidade.
+                            
+                        <h4>Ansiedade por Separação</h4>
+                        A ligação entre cão e dono é poderosa, e a separação pode gerar ansiedade em muitos cães. Comece com ausências curtas e progressivamente aumente o tempo. Antes de sair, ofereça brinquedos recheados com petiscos para manter o cão ocupado e distraído na sua ausência. Reforçar a ideia de que você sempre volta ajuda a construir confiança.
+                            
+                        Não faça uma despedida dramática. Ao sair e retornar, mantenha a calma para evitar criar ansiedade desnecessária. Considere a possibilidade de um treinamento gradual de separação para acostumar seu cão à ideia de ficar sozinho.
+                         </p>
+                    </div>
+
+                    <div class="rodape-modal">
+                        <button class="btn-outline-success" onclick="fecharModal('text-blog')">Fechar</button>
+                    </div>
+                </div>
+            </div>
+            
 
             <section class="post-blog">
                 <div class="post-imagem">
@@ -74,8 +135,39 @@
                 <h2> <a href="">Importância do passeio na rotina do pet</a></h2>
                 <p class="postagem-blog">Passear com os animais de estimação é algo que precisa estar na rotina dos tutores, pois é nesse momento que o bichinho faz as necessidades e pratica atividade física. Conheça outros benefícios...</p>
                 <p class="autor">Publicado por Roque em 02 de outubro de 2023</p>
+                <button class="btn-outline-success" onclick="abrirModal('text-blog')">Leia Mais</button>
                 </div>
             </section>
+
+            
+            <div id="text-blog" class="modal">
+                <div class="conteudo-modal">
+                    <div class="cabecalho-modal">
+                        <h1 class="titulo-modal">Adaptação do cão a nova família</h1>
+                        <span class="cabecalho-modal-fechar" onclick="fecharModal('text-blog')">X</span>
+                    </div>
+
+                    <div class="corpo-modal">
+                        <p>Seja bem-vindo ao emocionante capítulo da vida em que sua família se expande para incluir um novo membro peludo! Adotar um cão é uma experiência incrivelmente gratificante, mas também traz consigo desafios que podem parecer esmagadores para o novo amigo de quatro patas. Nesta postagem, vamos explorar as nuances da adaptação canina à nova família, abordando questões como estranhamento no novo espaço, ansiedade por separação e a arte de fazer as necessidades no lugar certo.
+
+                        <strong>Estranhamento com o Novo Espaço</strong>
+                        Imagine-se no lugar do seu cãozinho. De repente, tudo é novo: os cheiros, os sons, a disposição dos móveis. É natural que os cães estranhem inicialmente o novo ambiente. Paciência é a palavra-chave. Permita que o seu companheiro explore gradualmente cada canto da casa, sempre supervisionando para garantir a segurança.
+                            
+                        Crie um ambiente acolhedor com a presença de objetos familiares, como brinquedos e a cama antiga do cão, para proporcionar uma sensação de familiaridade. Estabeleça uma rotina consistente para criar previsibilidade, o que ajudará a reduzir o desconforto causado pela novidade.
+                            
+                        <strong>Ansiedade por Separação</strong>
+                        A ligação entre cão e dono é poderosa, e a separação pode gerar ansiedade em muitos cães. Comece com ausências curtas e progressivamente aumente o tempo. Antes de sair, ofereça brinquedos recheados com petiscos para manter o cão ocupado e distraído na sua ausência. Reforçar a ideia de que você sempre volta ajuda a construir confiança.
+                            
+                        Não faça uma despedida dramática. Ao sair e retornar, mantenha a calma para evitar criar ansiedade desnecessária. Considere a possibilidade de um treinamento gradual de separação para acostumar seu cão à ideia de ficar sozinho.
+                         </p>
+                    </div>
+
+                    <div class="rodape-modal">
+                        <button class="btn-outline-success" onclick="fecharModal('text-blog')">Fechar</button>
+                    </div>
+                </div>
+            </div>
+            
         </main>
     </div>
     <footer>

@@ -89,6 +89,70 @@ h2 a {
     border-bottom-right-radius: 20px;
 }
 
+.btn-outline-success {
+    color: #0292c9;
+    background-color: #E4EDFF;
+    padding: 5px 8px;
+    border: 1px solid #0292c9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-outline-success:hover {
+    background-color: #0292c9;
+    color: #E4EDFF;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    margin-top: 80px;
+    display: none;
+}
+
+.conteudo-modal {
+    margin: 0 auto;
+    margin-top: 3%;
+    max-width: 600px;
+    background-color: #E4EDFF;
+    border-radius: 8px;
+}
+
+.cabecalho-modal {
+    padding: 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #0292c9 1px;
+}
+
+.cabecalho-modal .titulo-modal {
+    font-weight: bold;
+    color: #0292c9;
+    margin: 10px 0;
+}
+
+.cabecalho-modal .cabecalho-modal-fechar {
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.corpo-modal {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.rodape-modal {
+    border-top: solid #0292c9 1px;
+    padding: 8px;
+}
+
+
 @media (max-width: 800px) {
     .bannerBlogSection {
 		padding: 60px 20px;
