@@ -12,37 +12,27 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 120px;
+    margin-bottom: auto;
+    
 }
 
 .center-box {
-    text-align: center;
     background-color: #E4EDFF;
-    width: 60%;
-    height: 60%;
+    height: 380px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column; 
     align-items: center;
-    justify-content: center;
+    border: 2px dashed #D1D1D1;
+    margin-bottom: 30px;
+    margin-right: 5px;
 }
 
 .center-box img {
     margin-top: 10px;
-    max-width: 100%; 
     height: auto;
-    max-height: 200px;
-    padding: 20px;
-}
-
-.center-box p {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold; 
-    color: #0292c9;
-    font-family: cursive;
+    width: 700px;
 }
 
 .login-box {
@@ -50,21 +40,9 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;
-    width: 20%;
-    height: 60%;
-}
-
-.patinhaDogEsquerda {
-	position: relative;
-	top: -30px;
-	margin-right: 20px;
-}
-
-.patinhaCatDireita {
-	position: relative;
-	top: -30px;
-	margin-left: 20px;
+    height: 380px;
+    border: 2px dashed #D1D1D1;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -151,5 +129,19 @@ button:hover {
 
 a {
     padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .center-box {
+        display: none;
+    }
+
+    .login-box {
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        height: 40%;
+    }
 }
 
