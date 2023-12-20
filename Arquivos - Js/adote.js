@@ -69,12 +69,16 @@ function abrirModal(element) {
 
 
 function fecharModal(element) {
-
-    var modal = element.parentNode.parentNode;
-
-
+    var modal = element.closest('.modal');
     modal.style.display = 'none';
 }
+
+document.querySelectorAll('.modal .btn-outline-sucess').forEach(function (button) {
+    button.addEventListener('click', function () {
+        fecharModal(this);
+    });
+});
+
 
 
 document.querySelectorAll('.btn-outline-sucess').forEach(function(button) {
